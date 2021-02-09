@@ -3,11 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cordier-info.github.io/posts/cours1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cordier-info.github.io/categories/</loc>
+    <loc>https://cordier-info.github.io/docs/cours1/</loc>
   </url>
   
   <url>
@@ -15,11 +11,7 @@
   </url>
   
   <url>
-    <loc>https://cordier-info.github.io/posts/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cordier-info.github.io/tags/</loc>
+    <loc>https://cordier-info.github.io/docs/</loc>
   </url>
   
 </urlset>
