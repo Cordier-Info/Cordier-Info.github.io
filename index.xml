@@ -38,5 +38,38 @@ salutation = &amp;#34;Bonjour, monsieur &amp;#34; nom = &amp;#39;Raoul&amp;#39; 
 liste1 = [1, &amp;#39;deux&amp;#39;, 3.14, 0] liste1 [1, &#39;deux&#39;, 3.</description>
     </item>
     
+    <item>
+      <title>Cours 4</title>
+      <link>https://cordier-info.github.io/docs/cours4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cordier-info.github.io/docs/cours4/</guid>
+      <description>Python - Structures de contrôle #  Python étant un langage impératif, il possède des structures de contrôle permettant de dévier le flot d&amp;rsquo;exécution. Les structures de contrôle travaillent sur des blocs d&amp;rsquo;instructions contigües qui sont repérés par leur indentation en Python.
+Les deux grandes familles de commandes de blocs sont :
+ les alternatives : exécuter un bloc d&amp;rsquo;instructions si une certaine condition est réunie (si &amp;hellip; sinon si &amp;hellip; sinon) ; les boucles : exécuter un bloc d&amp;rsquo;instructions à plusieurs reprises (boucle &amp;ldquo;tant que&amp;rdquo; et les boucles avec compteur for déjà rencontrées).</description>
+    </item>
+    
+    <item>
+      <title>Cours 5</title>
+      <link>https://cordier-info.github.io/docs/cours5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cordier-info.github.io/docs/cours5/</guid>
+      <description>Python - Fonctions #  Une fonction consiste en un bloc d&amp;rsquo;instructions qui peut être appelé et exécuté à différents endroits et à plusieurs reprises dans le programme.
+Deux avantages à l&amp;rsquo;utilisation de fonctions :
+ elles permettent de réutiliser du code sans avoir à le réécrire, elles permettent de décomposer un problème complexe en différentes procédures plus simples, chacune prise en charge par sa propre fonction.  Le résultat est plus simple à lire et à débuguer.</description>
+    </item>
+    
+    <item>
+      <title>Cours 6</title>
+      <link>https://cordier-info.github.io/docs/cours6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cordier-info.github.io/docs/cours6/</guid>
+      <description>Manipulation de fichiers #  Interaction avec le système d&amp;rsquo;exploitation #  Le module os offre la possibilité d&amp;rsquo;interagir avec le système d&amp;rsquo;exploitation indépendamment de la plateforme utilisée.
+ os.getcwd() renvoie le répertoire courant (répertoire depuis lequel le programme est exécuté) sous forme de chaîne.  import os os.getcwd() &#39;/Users/cordiermarc/Documents/prof/informatique/Python_6&#39;
+ os.chdir(&#39;répertoire&#39;) permet de changer le répertoire courant pour le répertoire donné en argument. On peut soit donner le chemin absolu (qui commence par la racine, / sur un système Unix) soit un chemin relatif (qui commence par .</description>
+    </item>
+    
   </channel>
 </rss>
