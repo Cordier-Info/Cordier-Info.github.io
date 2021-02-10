@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cours2s on Cours Python</title>
+    <link>https://cordier-info.github.io/cours2/</link>
+    <description>Recent content in Cours2s on Cours Python</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language><atom:link href="https://cordier-info.github.io/cours2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cours 2</title>
+      <link>https://cordier-info.github.io/cours2/cours2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cordier-info.github.io/cours2/cours2/</guid>
+      <description>Les chaînes de caractères Définir une chaîne de caractères Une chaîne de caractères (type str pour l&amp;rsquo;anglais string) est une suite ordonnée de caractères.
+Pour définir une variable de ce type, il suffit d&amp;rsquo;encadrer des caractères par &#39; ou &amp;quot; :
+salutation = &amp;#34;Bonjour, monsieur &amp;#34; nom = &amp;#39;Raoul&amp;#39; Des chaînes de caractères peuvent être concaténées (= assemblées) en utilisant l&amp;rsquo;opérateur + :
+&amp;#34;abc&amp;#34; + &amp;#39;def&amp;#39; &#39;abcdef&#39;
+salutation + nom &#39;Bonjour, monsieur Raoul&#39;</description>
+    </item>
+    
+  </channel>
+</rss>
