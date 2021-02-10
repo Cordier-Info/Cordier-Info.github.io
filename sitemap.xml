@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cordier-info.github.io/cours1/</loc>
+    <loc>https://cordier-info.github.io/sommaire/cours1/</loc>
   </url>
   
   <url>
-    <loc>https://cordier-info.github.io/cours2/</loc>
+    <loc>https://cordier-info.github.io/sommaire/cours2/</loc>
   </url>
   
   <url>
-    <loc>https://cordier-info.github.io/cours3/</loc>
+    <loc>https://cordier-info.github.io/sommaire/cours3/</loc>
   </url>
   
   <url>
-    <loc>https://cordier-info.github.io/cours4/</loc>
+    <loc>https://cordier-info.github.io/sommaire/cours4/</loc>
   </url>
   
   <url>
-    <loc>https://cordier-info.github.io/cours5/</loc>
+    <loc>https://cordier-info.github.io/sommaire/cours5/</loc>
   </url>
   
   <url>
-    <loc>https://cordier-info.github.io/cours6/</loc>
+    <loc>https://cordier-info.github.io/sommaire/cours6/</loc>
   </url>
   
   <url>
@@ -32,6 +32,10 @@
   
   <url>
     <loc>https://cordier-info.github.io/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cordier-info.github.io/sommaire/</loc>
   </url>
   
   <url>
