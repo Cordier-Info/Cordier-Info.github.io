@@ -512,7 +512,7 @@ div.notices.info p {
     background: #FFF2DB;
 }
 div.notices.info p:first-child:after {
-    content: 'Info';
+    content: 'Important';
 }
 div.notices.warning p {
     border-top: 30px solid rgba(217, 83, 79, 0.8);
