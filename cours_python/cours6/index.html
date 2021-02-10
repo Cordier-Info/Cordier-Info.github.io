@@ -35,20 +35,20 @@ onload='renderMathInElement(document.body);'></script>
     
 
     
-    <link href="/css/nucleus.css?1612979005" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1612979005" rel="stylesheet">
-    <link href="/css/hybrid.css?1612979005" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1612979005" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1612979005" rel="stylesheet">
-    <link href="/css/auto-complete.css?1612979005" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1612979005" rel="stylesheet">
-    <link href="/css/theme.css?1612979005" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1612979005" rel="stylesheet">
+    <link href="/css/nucleus.css?1612984104" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1612984104" rel="stylesheet">
+    <link href="/css/hybrid.css?1612984104" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1612984104" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1612984104" rel="stylesheet">
+    <link href="/css/auto-complete.css?1612984104" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1612984104" rel="stylesheet">
+    <link href="/css/theme.css?1612984104" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1612984104" rel="stylesheet">
     
-    <link href="/css/foo.css?1612979005" rel="stylesheet"><link href="/css/bar.css?1612979005" rel="stylesheet">
+    <link href="/css/foo.css?1612984104" rel="stylesheet"><link href="/css/bar.css?1612984104" rel="stylesheet">
 
 
-    <script src="/js/jquery-3.3.1.min.js?1612979005"></script>
+    <script src="/js/jquery-3.3.1.min.js?1612984104"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@ onload='renderMathInElement(document.body);'></script>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1612979005"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1612979005"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1612984104"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1612984104"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/cordier-info.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1612979005"></script>
+<script type="text/javascript" src="/js/search.js?1612984104"></script>
 
     
   </div>
@@ -546,7 +546,7 @@ Ce mode est à utiliser pour les fichiers contenant autre chose que du texte.</p
 <p>Plus pratique, la fonction native <code>print()</code> peut accepter en argument un objet <code>file</code>. Plutôt que d&rsquo;être affichée sur le shell, la sortie de <code>print()</code> est alors redirigée vers ce fichier.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>, <span style="color:#ae81ff">35</span>, <span style="color:#e6db74">&#39;Cl&#39;</span>, <span style="color:#ae81ff">2</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>, file<span style="color:#f92672">=</span>f)
 f<span style="color:#f92672">.</span>close()
-</code></pre></div><p>Exemple: le programme suivant écrit les quatre premières puissances de tous les entiers entre 1 et 1000, chaque champ étant séparé par une virgule, dans le fichier puissances.txt.</p>
+</code></pre></div><p>Exemple : le programme suivant écrit les quatre premières puissances de tous les entiers entre 1 et 1000, chaque champ étant séparé par une virgule, dans le fichier puissances.txt.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">fi <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#39;puissances.txt&#39;</span>,<span style="color:#e6db74">&#39;w&#39;</span>)
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1001</span>) :
     <span style="color:#66d9ef">print</span>(i, i<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>, i<span style="color:#f92672">**</span><span style="color:#ae81ff">3</span>, i<span style="color:#f92672">**</span><span style="color:#ae81ff">4</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;, &#39;</span>, file<span style="color:#f92672">=</span>fi)
@@ -582,8 +582,11 @@ n <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>
 <span style="color:#66d9ef">print</span>(n, <span style="color:#e6db74">&#39;au cube vaut&#39;</span>, cubes[n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
 </code></pre></div><pre><code>500 au cube vaut 125000000
 </code></pre>
-<p>Mais en pratique, il vaut mieux utiliser NumPy (2e semestre) pour des fichiers de données comme celui-ci.</p>
-<p>Vous apprendrez aussi à utiliser les méthodes des bases de données.</p>
+
+<div class="notices note" ><p>Mais en pratique, il vaut mieux utiliser les bibliothèques NumPy (2e semestre) ou Pandas pour des fichiers de données comme celui-ci.<br>
+Vous apprendrez aussi à utiliser les méthodes des bases de données.</p>
+</div>
+
 <hr>
 <p>Dans cet exemple, on va créer un petit gif qui illustre le théorème de La Hire :</p>
 <p>le programme produit un nouveau dossier <code>petitgif</code> dans lequel il crée 40 fichiers <code>svg</code> aux noms incrémentés (de <code>fig00.svg</code> à <code>fig39.svg</code>) décrivant des cercles et des segments.</p>
@@ -659,7 +662,10 @@ largeur, hauteur <span style="color:#f92672">=</span> image<span style="color:#f
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pixels_image <span style="color:#f92672">=</span> image<span style="color:#f92672">.</span>load()
 pixels_image[<span style="color:#ae81ff">23</span>,<span style="color:#ae81ff">102</span>]
 </code></pre></div><p><code>(90, 78, 66)</code></p>
-<p>Chaque pixel contient un tuple de 3 éléments codant sa couleur au format RGB : chacune des 3 couleurs primaires, rouge, vert et bleu, est codée par un byte de 8 bits autorisant donc 256 valeurs (0 pour le noir, 255 pour la couleur saturée). Cela fait en tout une palette de $256^3$ soit plus de 16 millions de couleurs.</p>
+
+<div class="notices info" ><p>Chaque pixel contient un tuple de 3 éléments codant sa couleur au format RGB : chacune des 3 couleurs primaires, rouge, vert et bleu, est codée par un byte de 8 bits autorisant donc 256 valeurs (0 pour le noir, 255 pour la couleur saturée). Cela fait en tout une palette de $256^3$ soit plus de 16 millions de couleurs.</p>
+</div>
+
 <p>Supposons que l&rsquo;on souhaite transformer une photo en couleur en une photo noir et blanc (ou plutôt en niveaux de gris).</p>
 <p>On peut commencer par définir une fonction <code>intensité_moyenne(pixel)</code> qui fait la moyenne des intensités des 3 couleurs de chaque pixel. Puis on affecte cette valeur unique à chacune des intensités des 3 couleurs dans une nouvelle image (cela donne une teinte plus ou moins foncée de gris).</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">intensité_moyenne</span>(pixel) :
@@ -1009,19 +1015,19 @@ plt<span style="color:#f92672">.</span>show()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1612979005"></script>
-    <script src="/js/perfect-scrollbar.min.js?1612979005"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1612979005"></script>
-    <script src="/js/jquery.sticky.js?1612979005"></script>
-    <script src="/js/featherlight.min.js?1612979005"></script>
-    <script src="/js/highlight.pack.js?1612979005"></script>
+    <script src="/js/clipboard.min.js?1612984104"></script>
+    <script src="/js/perfect-scrollbar.min.js?1612984104"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1612984104"></script>
+    <script src="/js/jquery.sticky.js?1612984104"></script>
+    <script src="/js/featherlight.min.js?1612984104"></script>
+    <script src="/js/highlight.pack.js?1612984104"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1612979005"></script>
-    <script src="/js/learn.js?1612979005"></script>
-    <script src="/js/hugo-learn.js?1612979005"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1612984104"></script>
+    <script src="/js/learn.js?1612984104"></script>
+    <script src="/js/hugo-learn.js?1612984104"></script>
     
         
-            <script src="/mermaid/mermaid.js?1612979005"></script>
+            <script src="/mermaid/mermaid.js?1612984104"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

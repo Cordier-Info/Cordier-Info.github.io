@@ -35,20 +35,20 @@ onload='renderMathInElement(document.body);'></script>
     
 
     
-    <link href="/css/nucleus.css?1612979005" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1612979005" rel="stylesheet">
-    <link href="/css/hybrid.css?1612979005" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1612979005" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1612979005" rel="stylesheet">
-    <link href="/css/auto-complete.css?1612979005" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1612979005" rel="stylesheet">
-    <link href="/css/theme.css?1612979005" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1612979005" rel="stylesheet">
+    <link href="/css/nucleus.css?1612984104" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1612984104" rel="stylesheet">
+    <link href="/css/hybrid.css?1612984104" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1612984104" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1612984104" rel="stylesheet">
+    <link href="/css/auto-complete.css?1612984104" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1612984104" rel="stylesheet">
+    <link href="/css/theme.css?1612984104" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1612984104" rel="stylesheet">
     
-    <link href="/css/foo.css?1612979005" rel="stylesheet"><link href="/css/bar.css?1612979005" rel="stylesheet">
+    <link href="/css/foo.css?1612984104" rel="stylesheet"><link href="/css/bar.css?1612984104" rel="stylesheet">
 
 
-    <script src="/js/jquery-3.3.1.min.js?1612979005"></script>
+    <script src="/js/jquery-3.3.1.min.js?1612984104"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@ onload='renderMathInElement(document.body);'></script>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1612979005"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1612979005"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1612984104"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1612984104"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/cordier-info.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1612979005"></script>
+<script type="text/javascript" src="/js/search.js?1612984104"></script>
 
     
   </div>
@@ -486,7 +486,7 @@ Deux avantages à l&rsquo;utilisation de fonctions :</p>
 <li>elles permettent de réutiliser du code sans avoir à le réécrire,</li>
 <li>elles permettent de décomposer un problème complexe en différentes procédures plus simples, chacune prise en charge par sa propre fonction.</li>
 </ul>
-<p>Le résultat est plus simple à lire et à débuguer.</p>
+<p>Le code est rendu plus clair et plus facile à débuguer.</p>
 <p> </p>
 <p> </p>
 <h2 id="définir-et-appeler-une-fonction">Définir et appeler une fonction</h2>
@@ -514,9 +514,18 @@ nombre_au_carré <span style="color:#f92672">=</span> carré(nombre)
 
 <span style="color:#66d9ef">print</span>(racines(<span style="color:#ae81ff">1.</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">1.</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">6.</span>))
 </code></pre></div><p><code>(-2.0, 3.0)</code></p>
-<p>Une fonction n&rsquo;est pas obligée de renvoyer explicitement un objet. Si la fin du code est atteinte sans rencontrer un <code>return</code>, la valeur spéciale <code>None</code> est renvoyée.</p>
-<p>La définition d&rsquo;une fonction peut être écrite n&rsquo;importe où dans un programme mais une fonction ne peut pas être appelée avant sa définition.</p>
-<p>Les fonctions peuvent aussi être imbriquées mais une fonction définie à l&rsquo;intérieur d&rsquo;une autre fonction ne peut pas être appelée à l&rsquo;extérieur de cette fonction.</p>
+
+<div class="notices note" ><p>Une fonction n&rsquo;est pas obligée de renvoyer explicitement un objet. Si la fin du code est atteinte sans rencontrer un <code>return</code>, la valeur spéciale <code>None</code> est renvoyée.</p>
+</div>
+
+
+<div class="notices info" ><p>La définition d&rsquo;une fonction peut être écrite n&rsquo;importe où dans un programme mais une fonction ne peut pas être appelée avant sa définition.</p>
+</div>
+
+
+<div class="notices info" ><p>Les fonctions peuvent aussi être <strong>imbriquées</strong> mais une fonction définie à l&rsquo;intérieur d&rsquo;une autre fonction ne peut pas être appelée à l&rsquo;extérieur de cette fonction.</p>
+</div>
+
 <p> </p>
 <p> </p>
 <h2 id="chaîne-de-documentation">Chaîne de documentation</h2>
@@ -578,8 +587,11 @@ exprime_longueur(<span style="color:#ae81ff">10.1</span>)
 <p> </p>
 <p> </p>
 <h2 id="portée-des-variables">Portée des variables</h2>
-<p>Une fonction peut définir et utiliser ses propres variables. Ces variables sont alors dites <em>locales</em>.</p>
-<p>À l&rsquo;inverse, les variables affectées en dehors du bloc d&rsquo;une fonction peuvent être utilisées partout et sont dites <em>globales</em>.</p>
+
+<div class="notices info" ><p>Une fonction peut définir et utiliser ses propres variables. Ces variables sont alors dites <strong>locales</strong>.<br>
+À l&rsquo;inverse, les variables affectées en dehors du bloc d&rsquo;une fonction peuvent être utilisées partout et sont dites <strong>globales</strong>.</p>
+</div>
+
 <p>Exemple :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fct</span>() :
     a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
@@ -603,7 +615,10 @@ fct()
 Elle disparait quand l&rsquo;interprète sort de la fonction et n&rsquo;écrase donc pas la variable globale <code>a</code>.</p>
 <p>Dans l&rsquo;ordre, Python regarde d&rsquo;abord le champ <em>local</em>, puis <em>non local</em> (le champ englobant la fonction intérieure dans le cas de fonctions imbriquées),
 puis <em>global</em>, puis <em>built-in</em> (les fonctions natives qu&rsquo;il convient donc de ne pas redéfinir).</p>
-<p>Une fonction ne peut pas modifier une variable globale sans préciser qu&rsquo;elle le souhaite.</p>
+
+<div class="notices note" ><p>Une fonction ne peut pas modifier une variable globale sans préciser qu&rsquo;elle le souhaite.</p>
+</div>
+
 <p>Exemple :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fct1</span>() :
@@ -624,9 +639,12 @@ puis <em>global</em>, puis <em>built-in</em> (les fonctions natives qu&rsquo;il 
 
 fct2()
 </code></pre></div><p><code>3</code></p>
-<p>Attention, ce type de réaffectation est néanmoins à éviter, car il amène pas mal de confusion. C&rsquo;est souvent plus logique de passer <code>x</code> en argument de la fonction.</p>
+
+<div class="notices warning" ><p>Ce type de réaffectation est néanmoins à éviter, car il amène pas mal de confusion. C&rsquo;est souvent plus logique de passer <code>x</code> en argument de la fonction.</p>
+</div>
+
 <hr>
-<p>Un petit exemple avec des listes de parts de pizza :</p>
+<p>Illsutration avec des listes de parts de pizza :</p>
 <p>Il peut être intéressant d&rsquo;utiliser une fonction pour construire une liste des différents termes d&rsquo;une <strong>suite définie par récurrence</strong> :</p>
 <p>&ldquo;<em>The lazy caterer sequence</em>&rdquo; (la suite du traiteur paresseux en français) est une suite
 donnant le nombre maximum de morceaux de pizza pouvant être obtenus avec un certain nombre de coupes droites.</p>
@@ -638,7 +656,7 @@ donnant le nombre maximum de morceaux de pizza pouvant être obtenus avec un cer
     suite<span style="color:#f92672">.</span>append(suite[n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">+</span>n)
 suite <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>]
 <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">16</span>) :
-    f(suite) <span style="color:#75715e"># n est défini dans le champ global</span>
+    f(suite) <span style="color:#75715e"># n et suite sont définis dans le champ global</span>
 <span style="color:#66d9ef">print</span>(suite)
 </code></pre></div><p><code>[1, 2, 4, 7, 11, 16, 22, 29, 37, 46, 56, 67, 79, 92, 106, 121]</code></p>
 <p> </p>
@@ -962,19 +980,19 @@ En effet, <code>sorted(liste, key = fonction)</code> peut prendre en argument un
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1612979005"></script>
-    <script src="/js/perfect-scrollbar.min.js?1612979005"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1612979005"></script>
-    <script src="/js/jquery.sticky.js?1612979005"></script>
-    <script src="/js/featherlight.min.js?1612979005"></script>
-    <script src="/js/highlight.pack.js?1612979005"></script>
+    <script src="/js/clipboard.min.js?1612984104"></script>
+    <script src="/js/perfect-scrollbar.min.js?1612984104"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1612984104"></script>
+    <script src="/js/jquery.sticky.js?1612984104"></script>
+    <script src="/js/featherlight.min.js?1612984104"></script>
+    <script src="/js/highlight.pack.js?1612984104"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1612979005"></script>
-    <script src="/js/learn.js?1612979005"></script>
-    <script src="/js/hugo-learn.js?1612979005"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1612984104"></script>
+    <script src="/js/learn.js?1612984104"></script>
+    <script src="/js/hugo-learn.js?1612984104"></script>
     
         
-            <script src="/mermaid/mermaid.js?1612979005"></script>
+            <script src="/mermaid/mermaid.js?1612984104"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

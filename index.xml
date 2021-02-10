@@ -104,7 +104,7 @@ solde = 100 def ajoute_intérêt(solde,taux) : solde += solde * taux/100 for ann
       <guid>https://cordier-info.github.io/cours_python/cours5/</guid>
       <description>Fonctions Une fonction consiste en un bloc d&amp;rsquo;instructions qui peut être appelé et exécuté à différents endroits et à plusieurs reprises dans le programme.
 Deux avantages à l&amp;rsquo;utilisation de fonctions :
- elles permettent de réutiliser du code sans avoir à le réécrire, elles permettent de décomposer un problème complexe en différentes procédures plus simples, chacune prise en charge par sa propre fonction.  Le résultat est plus simple à lire et à débuguer.</description>
+ elles permettent de réutiliser du code sans avoir à le réécrire, elles permettent de décomposer un problème complexe en différentes procédures plus simples, chacune prise en charge par sa propre fonction.  Le code est rendu plus clair et plus facile à débuguer.</description>
     </item>
     
     <item>

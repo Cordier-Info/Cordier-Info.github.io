@@ -35,20 +35,20 @@ onload='renderMathInElement(document.body);'></script>
     
 
     
-    <link href="/css/nucleus.css?1612979005" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1612979005" rel="stylesheet">
-    <link href="/css/hybrid.css?1612979005" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1612979005" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1612979005" rel="stylesheet">
-    <link href="/css/auto-complete.css?1612979005" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1612979005" rel="stylesheet">
-    <link href="/css/theme.css?1612979005" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1612979005" rel="stylesheet">
+    <link href="/css/nucleus.css?1612984104" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1612984104" rel="stylesheet">
+    <link href="/css/hybrid.css?1612984104" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1612984104" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1612984104" rel="stylesheet">
+    <link href="/css/auto-complete.css?1612984104" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1612984104" rel="stylesheet">
+    <link href="/css/theme.css?1612984104" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1612984104" rel="stylesheet">
     
-    <link href="/css/foo.css?1612979005" rel="stylesheet"><link href="/css/bar.css?1612979005" rel="stylesheet">
+    <link href="/css/foo.css?1612984104" rel="stylesheet"><link href="/css/bar.css?1612984104" rel="stylesheet">
 
 
-    <script src="/js/jquery-3.3.1.min.js?1612979005"></script>
+    <script src="/js/jquery-3.3.1.min.js?1612984104"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@ onload='renderMathInElement(document.body);'></script>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1612979005"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1612979005"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1612984104"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1612984104"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/cordier-info.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1612979005"></script>
+<script type="text/javascript" src="/js/search.js?1612984104"></script>
 
     
   </div>
@@ -462,6 +462,7 @@ onload='renderMathInElement(document.body);'></script>
         <li><a href="#else"><code>else</code></a></li>
       </ul>
     </li>
+    <li><a href="#la-gestion-dexceptions">La gestion d&rsquo;exceptions</a></li>
   </ul>
 </nav>
     </div>
@@ -520,7 +521,10 @@ Les structures de contrôle travaillent sur des blocs d&rsquo;instructions conti
 8 est plus grand que 5
 9 est plus grand que 5
 </code></pre>
-<p>Python reconnaît comme vrai n&rsquo;importe quel type de donnée (même pas besoin d&rsquo;expression logique) du moment qu&rsquo;il ne s&rsquo;agit ni de l&rsquo;entier <code>0</code>, du décimal <code>0.</code>, de la chaîne de caractères vide <code>''</code>, du tuple vide <code>()</code>, de la liste vide <code>[]</code>, ou encore de la valeur <code>None</code>.</p>
+
+<div class="notices note" ><p>Python reconnaît comme vrai n&rsquo;importe quel type de donnée (même pas besoin d&rsquo;expression logique) du moment qu&rsquo;il ne s&rsquo;agit ni de l&rsquo;entier <code>0</code>, du décimal <code>0.</code>, de la chaîne de caractères vide <code>''</code>, du tuple vide <code>()</code>, de la liste vide <code>[]</code>, ou encore de la valeur <code>None</code>.</p>
+</div>
+
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>) :
     
     <span style="color:#66d9ef">if</span> x :                       <span style="color:#75715e"># vrai pour tout x ≠ 0</span>
@@ -595,8 +599,10 @@ L&rsquo;exécution reprend à l&rsquo;instruction suivant la boucle.</p>
         <span style="color:#66d9ef">break</span>
 <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;L&#39;élément d&#39;indice&#34;</span>,i,<span style="color:#e6db74">&#34;valant&#34;</span>,a,<span style="color:#e6db74">&#34;est le premier élément négatif.&#34;</span>)
 </code></pre></div><p><code>L'élément d'indice 5 valant -2 est le premier élément négatif.</code></p>
-<p>Notons qu&rsquo;après la sortie de la boucle, les variables <code>i</code> et <code>a</code> gardent les valeurs qu&rsquo;elles ont au moment de l&rsquo;instruction <code>break</code>.</p>
-<p> </p>
+
+<div class="notices note" ><p>Après la sortie de la boucle, les variables <code>i</code> et <code>a</code> gardent les valeurs qu&rsquo;elles ont au moment de l&rsquo;instruction <code>break</code>.</p>
+</div>
+
 <p> </p>
 <h3 id="continue"><code>continue</code></h3>
 <p><code>continue</code> marche comme <code>break</code> mais au lieu de sortir de la boucle, l&rsquo;instruction force immédiatement la prochaine itération de la boucle sans accomplir le reste des instructions du bloc pour l&rsquo;itération en cours.</p>
@@ -611,7 +617,6 @@ L&rsquo;exécution reprend à l&rsquo;instruction suivant la boucle.</p>
 10 est pair
 </code></pre>
 <p>Si <code>i</code> n&rsquo;est pas divisible par 2 et donc que <code>i % 2 = 1</code>, ce qui est considéré comme <code>True</code>, <code>continue</code> est appelé et on passe alors directement au <code>i</code> suivant, et donc l&rsquo;instruction <code>print</code> est sautée.</p>
-<p> </p>
 <p> </p>
 <h3 id="else"><code>else</code></h3>
 <p>On peut faire suivre une boucle <code>for</code> ou <code>while</code> d&rsquo;un bloc introduit par une instruction <code>else</code>. Ce bloc n&rsquo;est exécuté que si la boucle se termine &ldquo;normalement&rdquo;, i.e. sans rencontrer un <code>break</code>.<!-- raw HTML omitted -->
@@ -643,6 +648,9 @@ b <span style="color:#f92672">=</span> a <span style="color:#f92672">-</span> <s
 <span style="color:#66d9ef">else</span> :
     <span style="color:#66d9ef">print</span>(a,<span style="color:#e6db74">&#39;est premier !&#39;</span>)
 </code></pre></div><p><code>le plus grand diviseur de 2019 est 673</code></p>
+<p> </p>
+<p> </p>
+<h2 id="la-gestion-dexceptions">La gestion d&rsquo;exceptions</h2>
 
 
 <footer class="footline">
@@ -906,19 +914,19 @@ b <span style="color:#f92672">=</span> a <span style="color:#f92672">-</span> <s
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1612979005"></script>
-    <script src="/js/perfect-scrollbar.min.js?1612979005"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1612979005"></script>
-    <script src="/js/jquery.sticky.js?1612979005"></script>
-    <script src="/js/featherlight.min.js?1612979005"></script>
-    <script src="/js/highlight.pack.js?1612979005"></script>
+    <script src="/js/clipboard.min.js?1612984104"></script>
+    <script src="/js/perfect-scrollbar.min.js?1612984104"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1612984104"></script>
+    <script src="/js/jquery.sticky.js?1612984104"></script>
+    <script src="/js/featherlight.min.js?1612984104"></script>
+    <script src="/js/highlight.pack.js?1612984104"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1612979005"></script>
-    <script src="/js/learn.js?1612979005"></script>
-    <script src="/js/hugo-learn.js?1612979005"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1612984104"></script>
+    <script src="/js/learn.js?1612984104"></script>
+    <script src="/js/hugo-learn.js?1612984104"></script>
     
         
-            <script src="/mermaid/mermaid.js?1612979005"></script>
+            <script src="/mermaid/mermaid.js?1612984104"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
