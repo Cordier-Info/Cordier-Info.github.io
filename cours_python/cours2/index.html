@@ -35,20 +35,20 @@ onload='renderMathInElement(document.body);'></script>
     
 
     
-    <link href="/css/nucleus.css?1612941528" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1612941528" rel="stylesheet">
-    <link href="/css/hybrid.css?1612941528" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1612941528" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1612941528" rel="stylesheet">
-    <link href="/css/auto-complete.css?1612941528" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1612941528" rel="stylesheet">
-    <link href="/css/theme.css?1612941528" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1612941528" rel="stylesheet">
+    <link href="/css/nucleus.css?1612942146" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1612942146" rel="stylesheet">
+    <link href="/css/hybrid.css?1612942146" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1612942146" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1612942146" rel="stylesheet">
+    <link href="/css/auto-complete.css?1612942146" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1612942146" rel="stylesheet">
+    <link href="/css/theme.css?1612942146" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1612942146" rel="stylesheet">
     
-    <link href="/css/foo.css?1612941528" rel="stylesheet"><link href="/css/bar.css?1612941528" rel="stylesheet">
+    <link href="/css/foo.css?1612942146" rel="stylesheet"><link href="/css/bar.css?1612942146" rel="stylesheet">
 
 
-    <script src="/js/jquery-3.3.1.min.js?1612941528"></script>
+    <script src="/js/jquery-3.3.1.min.js?1612942146"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@ onload='renderMathInElement(document.body);'></script>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1612941528"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1612941528"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1612942146"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1612942146"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/cordier-info.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1612941528"></script>
+<script type="text/javascript" src="/js/search.js?1612942146"></script>
 
     
   </div>
@@ -358,6 +358,7 @@ Pour définir une variable de ce type, il suffit d&rsquo;encadrer des caractère
 <p>Et on peut combiner <code>*</code> et <code>+</code> (en utilisant des parenthèses) :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(<span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;B&#39;</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>
 </code></pre></div><p><code>'aaaaBaaaaBaaaaB'</code></p>
+<p> </p>
 <p>Une chaîne vide est définie simplement comme <code>''</code> ou <code>&quot;&quot;</code>.</p>
 <p>Enfin, la fonction <code>str()</code> convertit un objet (nombre entier, nombre décimal, liste, etc.) en chaîne de caractères :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">str(<span style="color:#ae81ff">42</span>)
@@ -366,6 +367,7 @@ Pour définir une variable de ce type, il suffit d&rsquo;encadrer des caractère
 </code></pre></div><p><code>'340000.0'</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">str(<span style="color:#ae81ff">3.4e20</span>)
 </code></pre></div><p><code>'3.4e+20'</code></p>
+<p> </p>
 <p>La fonction native <code>len()</code> permet de connaître le nombre de caractère d&rsquo;une chaîne de caractères (bien noter que les espaces, les fins de ligne ou encore la ponctuation sont aussi des caractères) :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">len(salutation)
 </code></pre></div><p><code>18</code></p>
@@ -485,6 +487,7 @@ On a ainsi :</p>
 </code></pre></div><p><code>14</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a[<span style="color:#ae81ff">14</span>]
 </code></pre></div><p><code>IndexError: string index out of range</code></p>
+<p> </p>
 <p>Le <strong>slicing</strong> (<strong>découpage</strong>) <code>s[i:j]</code> permet d&rsquo;extraire des éléments de la chaîne ; il extrait une sous-chaîne limitée par les caractères ciblés par les deux indices, incluant l&rsquo;indice <code>i</code> et excluant l&rsquo;indice <code>j</code>.<br>
 Si le premier indice est omis <code>s[:j]</code>, il est supposé valoir <code>0</code>. Si le deuxième est omis, le slicing s&rsquo;étend jusqu&rsquo;à la fin de la chaîne.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a[<span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">9</span>]
@@ -504,11 +507,13 @@ On peut alors  récupérer une tranche de longueur <code>r</code> avec <code>s[i
 </code></pre></div><p><code>'TSI'</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b[<span style="color:#ae81ff">10</span>:]
 </code></pre></div><p><code>'Vieljeux'</code></p>
+<p> </p>
 <p>Contrairement à l&rsquo;indexation, un slicing en dehors des limites ne lève pas d&rsquo;erreur.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b[<span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">20</span>]
 </code></pre></div><p><code>'Vieljeux'</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b[<span style="color:#ae81ff">20</span>:]
 </code></pre></div><p><code>''</code></p>
+<p> </p>
 <p>Un troisième nombre (optionnel) dans un découpage donne un pas (qui vaut par défaut <code>1</code> s&rsquo;il est omis) :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b[::<span style="color:#ae81ff">2</span>]
 </code></pre></div><p><code>'PéaSdVeju'</code></p>
@@ -520,6 +525,7 @@ On peut alors  récupérer une tranche de longueur <code>r</code> avec <code>s[i
 <p>Renverser une chaîne complète de caractère devient très simple :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
 </code></pre></div><p><code>'xuejleiV eécyL'</code></p>
+<p> </p>
 <p>Pour tester si une chaîne contient une certaine sous-chaîne, on utilise l&rsquo;opérateur <code>in</code> (attention à la casse).</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#39;Vie&#39;</span> <span style="color:#f92672">in</span> b
 </code></pre></div><p><code>True</code></p>
@@ -538,6 +544,7 @@ On peut alors  récupérer une tranche de longueur <code>r</code> avec <code>s[i
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Léonce &#39;</span> <span style="color:#f92672">+</span>  a[<span style="color:#ae81ff">6</span>:<span style="color:#ae81ff">14</span>]
 <span style="color:#66d9ef">print</span>(b)
 </code></pre></div><p><code>Léonce Vieljeux</code></p>
+<p> </p>
 <p>Beaucoup de méthodes permettent de manipuler et transformer les chaînes. On y a accès par la notation point &ldquo;<code>.</code>&rdquo;. Quelques méthodes utiles :</p>
 <table>
 <thead>
@@ -601,10 +608,12 @@ On peut alors  récupérer une tranche de longueur <code>r</code> avec <code>s[i
 </tr>
 </tbody>
 </table>
+<p> </p>
 <p>Comme ces méthodes retournent toutes une nouvelle chaîne, on peut les enchaîner.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;--Prépa TSI du lycée Léonce Vieljeux&#39;</span>
 c<span style="color:#f92672">.</span>strip(<span style="color:#e6db74">&#39;--&#39;</span>)<span style="color:#f92672">.</span>upper()<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;LÉONCE &#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>)<span style="color:#f92672">.</span>center(<span style="color:#ae81ff">51</span>,<span style="color:#e6db74">&#39;-&#39;</span>)
 </code></pre></div><p><code>'------------PRÉPA TSI DU LYCÉE VIELJEUX------------'</code></p>
+<p> </p>
 <p>Autres exemples d&rsquo;utilisation des méthodes :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">d <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;java python c++ fortran&#39;</span>
 d<span style="color:#f92672">.</span>isalpha()
@@ -650,6 +659,7 @@ g
 <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;c&#39;</span>)
 </code></pre></div><p><code>a</code></p>
 <p><code>b</code></p>
+<p> </p>
 <p><code>c</code></p>
 <p>Sans argument, <code>print</code> imprime le caractère de fin de ligne <code>\n</code> car c&rsquo;est la valeur de l&rsquo;argument <code>end</code> par défaut. Donc pour empêcher la fin de ligne après chaque appel de <code>print</code>, il faut donner une autre valeur à <code>end</code> comme <code>end = ''</code>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Pas de nouvelle ligne.&#39;</span>,end <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39; &#39;</span>)
@@ -685,6 +695,7 @@ Un nombre entre accolades se réfère à la position de l&rsquo;objet passé à 
 </code></pre></div><p><code>'2 plus 2 égale 4'</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#39;{nb1} plus {nb2} égale {rés}&#39;</span><span style="color:#f92672">.</span>format(nb1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>,nb2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>,rés <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cinq&#39;</span>)
 </code></pre></div><p><code>'2 plus 3 égale cinq'</code></p>
+<p> </p>
 <p>On peut aussi spécifier une taille minimale à la chaîne qui sera insérée. Si la chaîne passée à la méthode est plus petite que la taille indiquée, elle est complétée par des espaces. La valeur de cette taille souhaitée est placée après un signe &ldquo;<code>:</code>&rdquo; dans l&rsquo;accolade. La chaîne insérée est naturellement justifiée à gauche, comportement modifiable grâce à l&rsquo;ajout de &ldquo;<code>&gt;</code>&rdquo; ou &ldquo;<code>^</code>&rdquo;.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#39;==={0:12}===&#39;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;Python&#39;</span>)
 </code></pre></div><p><code>'===Python      ==='</code></p>
@@ -694,6 +705,7 @@ Un nombre entre accolades se réfère à la position de l&rsquo;objet passé à 
 </code></pre></div><p><code>'===   Python   ==='</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#39;==={0:2}===&#39;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;Python&#39;</span>) <span style="color:#75715e"># Si la taille de la chaîne insérée dépasse la taille allouée, pas de problème...</span>
 </code></pre></div><p><code>'===Python==='</code></p>
+<p> </p>
 <p>Cette méthode est aussi utile pour <strong>formater les nombres</strong> qui seront affichés.<br>
 Une lettre ajoutée dans l&rsquo;accolade spécifie le système de numération : <code>d</code> pour la base 10, <code>b</code> pour les binaires, <code>x</code> ou <code>X</code> pour les hexadécimaux (en minuscules ou majuscules).</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">254</span>
@@ -893,19 +905,19 @@ s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;{0:+5d}<
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1612941528"></script>
-    <script src="/js/perfect-scrollbar.min.js?1612941528"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1612941528"></script>
-    <script src="/js/jquery.sticky.js?1612941528"></script>
-    <script src="/js/featherlight.min.js?1612941528"></script>
-    <script src="/js/highlight.pack.js?1612941528"></script>
+    <script src="/js/clipboard.min.js?1612942146"></script>
+    <script src="/js/perfect-scrollbar.min.js?1612942146"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1612942146"></script>
+    <script src="/js/jquery.sticky.js?1612942146"></script>
+    <script src="/js/featherlight.min.js?1612942146"></script>
+    <script src="/js/highlight.pack.js?1612942146"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1612941528"></script>
-    <script src="/js/learn.js?1612941528"></script>
-    <script src="/js/hugo-learn.js?1612941528"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1612942146"></script>
+    <script src="/js/learn.js?1612942146"></script>
+    <script src="/js/hugo-learn.js?1612942146"></script>
     
         
-            <script src="/mermaid/mermaid.js?1612941528"></script>
+            <script src="/mermaid/mermaid.js?1612942146"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
