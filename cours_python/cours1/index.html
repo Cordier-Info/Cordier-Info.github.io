@@ -35,19 +35,20 @@ onload='renderMathInElement(document.body);'></script>
     
 
     
-    <link href="/css/nucleus.css?1612932832" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1612932832" rel="stylesheet">
-    <link href="/css/hybrid.css?1612932832" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1612932832" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1612932832" rel="stylesheet">
-    <link href="/css/auto-complete.css?1612932832" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1612932832" rel="stylesheet">
-    <link href="/css/theme.css?1612932832" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1612932832" rel="stylesheet">
+    <link href="/css/nucleus.css?1612939737" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1612939737" rel="stylesheet">
+    <link href="/css/hybrid.css?1612939737" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1612939737" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1612939737" rel="stylesheet">
+    <link href="/css/auto-complete.css?1612939737" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1612939737" rel="stylesheet">
+    <link href="/css/theme.css?1612939737" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1612939737" rel="stylesheet">
     
-    <link href="/css/foo.css?1612932832" rel="stylesheet"><link href="/css/bar.css?1612932832" rel="stylesheet">
+    <link href="/css/foo.css?1612939737" rel="stylesheet"><link href="/css/bar.css?1612939737" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1612932832"></script>
+
+    <script src="/js/jquery-3.3.1.min.js?1612939737"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -87,14 +88,14 @@ onload='renderMathInElement(document.body);'></script>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1612932832"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1612932832"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1612939737"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1612939737"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/cordier-info.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1612932832"></script>
+<script type="text/javascript" src="/js/search.js?1612939737"></script>
 
     
   </div>
@@ -340,7 +341,8 @@ onload='renderMathInElement(document.body);'></script>
         
 
 
-<h1 id="python---introduction">Python - Introduction</h1>
+<!-- raw HTML omitted -->
+<h1 id="introduction">Introduction</h1>
 <p>Python est un langage de programmation interprété développé par Guido van Rossum en 1989. Langage impératif de haut-niveau doté d&rsquo;une syntaxe simple, Python s&rsquo;adapte à de nombreux contextes grâce à sa modularité ; une importante librairie de modules et packages permet en effet d&rsquo;étendre ses capacités.</p>
 <p> </p>
 <p> </p>
@@ -394,18 +396,21 @@ Nombre de type <code>4+3j</code> (la partie imaginaire est notée <code>j</code>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">0.0000999</span>
 </code></pre></div><p><code>9.99e-05</code></p>
 <p>Les nombres inférieurs à 0,0001 sont écrits en notation scientifique.</p>
-<p>On peut changer le type d&rsquo;un nombre :</p>
+<p>On peut <strong>changer le type d&rsquo;un nombre</strong>  (conversion) en utilisant les fonctions natives <code>int()</code>, <code>float</code> et <code>complex</code> :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">float(<span style="color:#ae81ff">5</span>)
 </code></pre></div><p><code>5.0</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">int(<span style="color:#ae81ff">5.2</span>)
 </code></pre></div><p><code>5</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">int(<span style="color:#ae81ff">5.9</span>)
 </code></pre></div><p><code>5</code></p>
+
+<div class="notices note" ><p>On remarque que la transformation en entier d&rsquo;un nombre décimal prend en fait sa partie entière.</p>
+</div>
+
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">complex(<span style="color:#ae81ff">3.</span>)
 </code></pre></div><p><code>(3+0j)</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">complex(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">3.</span>)
 </code></pre></div><p><code>3j</code></p>
-<p>On remarque que la transformation en entier d&rsquo;un nombre décimal prend en fait sa partie entière.</p>
 <p> </p>
 <p> </p>
 <h2 id="arithmétique-de-base">Arithmétique de base</h2>
@@ -589,17 +594,18 @@ Beaucoup de fonctions mathématiques utiles peuvent ainsi être ajoutées grâce
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0.1</span>
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">*</span> b
 </code></pre></div><p><code>-0.30000000000000004</code></p>
-<p>À nouveau, le résultat décimal affiché est un peu étrange, toujours à cause du codage machine des flottants.</p>
+<p>À nouveau, le résultat décimal affiché est un peu étrange, toujours à cause de la précision limité des flottants (environ 16 chiffres significatifs seulement)&hellip;</p>
 <p>Si on veut pouvoir utiliser le résultat de <code>a * b</code> pour des calculs ultérieurs, il faut lui aussi le stocker en mémoire.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> b
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c
 </code></pre></div><p><code>-0.30000000000000004</code></p>
-<p>Remarque : contrairement à d&rsquo;autres langages (comme le C), une variable n&rsquo;a pas besoin d&rsquo;être déclarée en Python, mais il faut néanmoins initialiser sa valeur pour ne pas provoquer d&rsquo;erreur. Le type de la variable est induit au moment de cette première affectation.</p>
+<p>Contrairement à des langages à typage statique comme le C, <strong>une variable n&rsquo;a pas besoin d&rsquo;être déclarée en Python</strong>. On parle alors de <strong>typage dynamique.</strong> Mais il faut néanmoins initialiser la valeur de la variable pour ne pas provoquer d&rsquo;erreur. Le type de la variable est induit au moment de cette première affectation.</p>
 <pre><code>3+x
 </code></pre><p><code>NameError: name 'x' is not defined</code></p>
 <p>On peut interroger le type d&rsquo;une variable avec la fonction <code>type()</code> :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">type(c)
 </code></pre></div><p><code>float</code></p>
+<p> </p>
 <p>Règles sur les noms de variables :</p>
 <ul>
 <li>ils sont sensibles à la casse (minuscule ou majuscule)</li>
@@ -607,10 +613,15 @@ Beaucoup de fonctions mathématiques utiles peuvent ainsi être ajoutées grâce
 <li>certains noms sont interdits (attention en particulier à lambda) :</li>
 </ul>
 <p><code>and</code>  <code>assert</code>  <code>break</code>  <code>class</code>  <code>continue</code>  <code>def</code>  <code>del</code>  <code>elif</code>  <code>else</code>  <code>except</code>  <code>finally</code>  <code>for</code>  <code>from</code>  <code>global</code>  <code>if</code>  <code>import</code>  <code>in</code>  <code>is</code>  <code>lambda</code>  <code>nonlocal</code>  <code>not</code>  <code>or</code>  <code>pass</code>  <code>print</code>  <code>raise</code>  <code>return</code>  <code>try</code>  <code>while</code>  <code>yield</code></p>
-<p>Il est important pour la lisibilité de son code de donner les noms les plus explicites possibles aux variables. Les rapports de jury le répète tous les ans&hellip; Rapport 2019 de l&rsquo;épreuve de Centrale par exemple :</p>
+
+<div class="notices warning" ><p>Il est important pour la lisibilité de son code de donner les noms les plus explicites possibles aux variables. Les rapports de jury le répète tous les ans&hellip;</p>
+</div>
+
+<p>Rapport 2019 de l&rsquo;épreuve de Centrale par exemple :</p>
 <blockquote>
-<p>Des noms de variables explicites aident à la compréhension du code. De trop nombreux candidats utilisent des noms de variables quelconques (a, b, c&hellip;) ce qui nuit à la compréhension du programme. La clarté du programme (en particulier le choix des noms de variables) ainsi que la présence de commentaires opportuns sont prises en compte dans l’évaluation.</p>
+<p><strong>Des noms de variables explicites aident à la compréhension du code. De trop nombreux candidats utilisent des noms de variables quelconques (a, b, c&hellip;) ce qui nuit à la compréhension du programme. La clarté du programme (en particulier le choix des noms de variables) ainsi que la présence de commentaires opportuns sont prises en compte dans l’évaluation.</strong></p>
 </blockquote>
+<p> </p>
 <p>Une affectation ne retourne rien (c&rsquo;est une instruction) mais a un effet sur la mémoire : l&rsquo;adresse de la variable est modifiée à chaque nouvelle affectation. C&rsquo;est ce qui rend possible les réaffectations à partir de la variable elle-même.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(a)
 </code></pre></div><p><code>4304751488</code></p>
@@ -619,8 +630,9 @@ Beaucoup de fonctions mathématiques utiles peuvent ainsi être ajoutées grâce
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(a)
 </code></pre></div><p><code>4304751520</code></p>
-<p>Les réaffectations de variable de ce type sont si fréquentes qu&rsquo;il existe une notation raccourcie : <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>//=</code>, <code>%=</code>.<!-- raw HTML omitted -->
-Ainsi, <code>a += 1</code> équivaut à <code>a = a + 1</code> et <code>b /= 5</code> équivaut à <code>b = b/5</code>.</p>
+<p>Ces types de <strong>réaffectation</strong> sont si fréquents qu&rsquo;il existe une notation raccourcie : <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>//=</code>, <code>%=</code>.</p>
+<p>Ainsi, <code>a += 1</code> équivaut à <code>a = a + 1</code> et <code>b /= 5</code> équivaut à <code>b = b/5</code>.</p>
+<p> </p>
 <p>Python permet d'<strong>affecter plusieurs variables simultanément</strong> (en parallèle) :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a , b <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.2</span> , <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a
@@ -682,7 +694,8 @@ type(a)
 </code></pre></div><p><code>bool</code></p>
 <p>Il faut bien noter la différence entre <code>=</code> qui affecte une valeur à une variable et <code>==</code> qui compare deux valeurs.</p>
 
-<div class="notices warning" > La précision finie des nombres flottants rend leur comparaison dangereuse : </div>
+<div class="notices warning" ><p>La précision finie des nombres flottants rend leur comparaison dangereuse :</p>
+</div>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a , b <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span> , <span style="color:#ae81ff">0.1</span><span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">==</span> b
@@ -705,8 +718,11 @@ type(a)
 <p>Un nombre entier ou décimal peut être considéré comme un booléen dans des expressions logiques. Dans ce cas, tout nombre différent de zéro est considéré comme vrai.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">18.7</span> <span style="color:#f92672">and</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8</span>
 </code></pre></div><p><code>True</code></p>
-<p>On parle d'<strong>égalité de valeurs</strong> (testée par l&rsquo;opérateur <code>==</code>) lorsque deux variables référencent la même valeur et d'<strong>égalité physique</strong> lorsqu&rsquo;il s&rsquo;agit du même objet ayant un emplacement mémoire unique. L&rsquo;égalité physique implique bien sûr l&rsquo;égalité de valeurs.<br>
-Pour tester l&rsquo;égalité physique de deux variables, on utilise l&rsquo;opérateur <code>is</code>.</p>
+
+<div class="notices note" ><p>On parle d'<strong>égalité de valeurs</strong> (testée par l&rsquo;opérateur <code>==</code>) lorsque deux variables référencent la même valeur et d'<strong>égalité physique</strong> lorsqu&rsquo;il s&rsquo;agit du même objet ayant un emplacement mémoire unique. L&rsquo;égalité physique implique bien sûr l&rsquo;égalité de valeurs.</p>
+</div>
+
+<p>Pour tester l&rsquo;égalité physique de deux variables, on utilise l&rsquo;opérateur <code>is</code>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">257</span>
 b <span style="color:#f92672">=</span> <span style="color:#ae81ff">257</span>
 a <span style="color:#f92672">==</span> b
@@ -905,19 +921,19 @@ On en verra un exemple d&rsquo;utilisation dans le TP 3.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1612932832"></script>
-    <script src="/js/perfect-scrollbar.min.js?1612932832"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1612932832"></script>
-    <script src="/js/jquery.sticky.js?1612932832"></script>
-    <script src="/js/featherlight.min.js?1612932832"></script>
-    <script src="/js/highlight.pack.js?1612932832"></script>
+    <script src="/js/clipboard.min.js?1612939737"></script>
+    <script src="/js/perfect-scrollbar.min.js?1612939737"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1612939737"></script>
+    <script src="/js/jquery.sticky.js?1612939737"></script>
+    <script src="/js/featherlight.min.js?1612939737"></script>
+    <script src="/js/highlight.pack.js?1612939737"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1612932832"></script>
-    <script src="/js/learn.js?1612932832"></script>
-    <script src="/js/hugo-learn.js?1612932832"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1612939737"></script>
+    <script src="/js/learn.js?1612939737"></script>
+    <script src="/js/hugo-learn.js?1612939737"></script>
     
         
-            <script src="/mermaid/mermaid.js?1612932832"></script>
+            <script src="/mermaid/mermaid.js?1612939737"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
