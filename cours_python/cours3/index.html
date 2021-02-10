@@ -35,20 +35,20 @@ onload='renderMathInElement(document.body);'></script>
     
 
     
-    <link href="/css/nucleus.css?1612984104" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1612984104" rel="stylesheet">
-    <link href="/css/hybrid.css?1612984104" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1612984104" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1612984104" rel="stylesheet">
-    <link href="/css/auto-complete.css?1612984104" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1612984104" rel="stylesheet">
-    <link href="/css/theme.css?1612984104" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1612984104" rel="stylesheet">
+    <link href="/css/nucleus.css?1612993327" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1612993327" rel="stylesheet">
+    <link href="/css/hybrid.css?1612993327" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1612993327" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1612993327" rel="stylesheet">
+    <link href="/css/auto-complete.css?1612993327" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1612993327" rel="stylesheet">
+    <link href="/css/theme.css?1612993327" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1612993327" rel="stylesheet">
     
-    <link href="/css/foo.css?1612984104" rel="stylesheet"><link href="/css/bar.css?1612984104" rel="stylesheet">
+    <link href="/css/foo.css?1612993327" rel="stylesheet"><link href="/css/bar.css?1612993327" rel="stylesheet">
 
 
-    <script src="/js/jquery-3.3.1.min.js?1612984104"></script>
+    <script src="/js/jquery-3.3.1.min.js?1612993327"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,17 +88,25 @@ onload='renderMathInElement(document.body);'></script>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1612984104"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1612984104"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1612993327"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1612993327"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/cordier-info.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1612984104"></script>
+<script type="text/javascript" src="/js/search.js?1612993327"></script>
 
     
   </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
   
 
     <div class="highlightable">
@@ -453,23 +461,30 @@ onload='renderMathInElement(document.body);'></script>
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#listes">Listes</a>
+    <li><a href="#séquences">Séquences</a>
       <ul>
-        <li><a href="#indexation">Indexation</a></li>
-        <li><a href="#slicing">Slicing</a></li>
-        <li><a href="#mutabilité-des-listes">Mutabilité des listes</a></li>
-        <li><a href="#méthodes">Méthodes</a></li>
+        <li><a href="#listes">Listes</a>
+          <ul>
+            <li><a href="#indexation">Indexation</a></li>
+            <li><a href="#slicing">Slicing</a></li>
+            <li><a href="#mutabilité-des-listes">Mutabilité des listes</a></li>
+            <li><a href="#méthodes">Méthodes</a></li>
+          </ul>
+        </li>
+        <li><a href="#tuples">Tuples</a></li>
       </ul>
     </li>
-    <li><a href="#tuples">Tuples</a></li>
-    <li><a href="#objets-itérables">Objets itérables</a></li>
-    <li><a href="#boucle-for">Boucle <code>for</code></a></li>
-    <li><a href="#la-fonction-range">La fonction <code>range()</code></a></li>
-    <li><a href="#enumerate"><code>enumerate</code></a></li>
-    <li><a href="#zip"><code>zip</code></a></li>
-    <li><a href="#listes-par-compréhension">Listes par compréhension</a></li>
+    <li><a href="#objets-itérables">Objets itérables</a>
+      <ul>
+        <li><a href="#boucle-for">Boucle <code>for</code></a></li>
+        <li><a href="#range"><code>range()</code></a></li>
+        <li><a href="#enumerate"><code>enumerate</code></a></li>
+        <li><a href="#zip"><code>zip</code></a></li>
+      </ul>
+    </li>
     <li><a href="#ensembles">Ensembles</a></li>
     <li><a href="#dictionnaires">Dictionnaires</a></li>
+    <li><a href="#listes-par-compréhension">Listes par compréhension</a></li>
   </ul>
 </nav>
     </div>
@@ -489,8 +504,9 @@ onload='renderMathInElement(document.body);'></script>
         
 
 
-<h1 id="listes-tuples-et-boucles">Listes, tuples et boucles</h1>
-<h2 id="listes">Listes</h2>
+<h1 id="séquences-et-itérables">Séquences et itérables</h1>
+<h2 id="séquences">Séquences</h2>
+<h3 id="listes">Listes</h3>
 <p>Python connaît différents types de données combinées, utilisés pour regrouper plusieurs valeurs. La plus souple est la liste, qui peut être écrite comme une suite, placée entre crochets, de valeurs (éléments) séparées par des virgules. Les éléments d&rsquo;une liste ne sont pas obligatoirement tous du même type, bien qu&rsquo;à l&rsquo;usage ce soit souvent le cas.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">liste1 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;deux&#39;</span>, <span style="color:#ae81ff">3.14</span>, <span style="color:#ae81ff">0</span>]
 liste1
@@ -505,7 +521,7 @@ liste0
 </code></pre></div><p><code>[]</code></p>
 <p> </p>
 <p> </p>
-<h3 id="indexation">Indexation</h3>
+<h4 id="indexation">Indexation</h4>
 
 <div class="notices info" ><p>Comme les chaînes de caractères, <strong>les listes peuvent être indicées et découpées</strong> (slicing) :</p>
 </div>
@@ -547,7 +563,7 @@ liste0
 </code></pre></div><p><code>4</code></p>
 <p> </p>
 <p> </p>
-<h3 id="slicing">Slicing</h3>
+<h4 id="slicing">Slicing</h4>
 <p>On découpe les listes comme on a découpé les chaînes de caractères :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.3</span>, <span style="color:#ae81ff">0.4</span>, <span style="color:#ae81ff">0.5</span>]
 L[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">4</span>]
@@ -560,7 +576,7 @@ L[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">4</span>]
 </code></pre></div><p><code>[0.1, 0.3, 0.5]</code></p>
 <p> </p>
 <p> </p>
-<h3 id="mutabilité-des-listes">Mutabilité des listes</h3>
+<h4 id="mutabilité-des-listes">Mutabilité des listes</h4>
 
 <div class="notices warning" ><p>Contrairement aux chaînes de caractères, les listes sont des objets <strong>mutables</strong>, c&rsquo;est-à-dire qu&rsquo;on peut modifier leur contenu.</p>
 </div>
@@ -603,7 +619,7 @@ lettres
 </code></pre></div><p><code>[]</code></p>
 <p> </p>
 <p> </p>
-<h3 id="méthodes">Méthodes</h3>
+<h4 id="méthodes">Méthodes</h4>
 <p>Le type <code>list</code> dispose, comme le type <code>string</code>, de méthodes supplémentaires, accessibles avec la notation point &ldquo;<code>.</code>&rdquo;.<br>
 Et comme les listes sont des objets muables, elles peuvent être agrandies ou rétrécies &ldquo;sur place&rdquo; (sans avoir à copier le contenu dans un nouvel objet).<br>
 Pour cela, on utilise les méthodes suivantes :</p>
@@ -696,7 +712,7 @@ noms<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39; 
 </code></pre></div><p><code>['Alphonse', 'Dudule', 'Raoul', 'Ursula']</code></p>
 <p> </p>
 <p> </p>
-<h2 id="tuples">Tuples</h2>
+<h3 id="tuples">Tuples</h3>
 <p>Nous avons vu que les listes et les chaînes de caractères ont beaucoup de propriétés en commun, comme l&rsquo;indexation et le slicing. Ce sont des exemples de <strong>séquences</strong>.
 
 <div class="notices info" ><p>Les  <strong>séquences</strong> sont une des principales structure de données native en Python. Ce sont des collections <strong>ordonnées</strong> d&rsquo;objets qui peuvent être <strong>indicées</strong> et <strong>découpées</strong>.</p>
@@ -754,7 +770,7 @@ math<span style="color:#f92672">.</span>hypot(c)
 <p>C&rsquo;est bien plus simple que d&rsquo;aller récupérer les éléments de la liste en les indexant (<code>math.hypot(c[0],c[1])</code>).</p>
 <p> </p>
 <p> </p>
-<h2 id="boucle-for">Boucle <code>for</code></h2>
+<h3 id="boucle-for">Boucle <code>for</code></h3>
 <p>C&rsquo;est souvent utile de récupérer et d&rsquo;utiliser un à un chacun des éléments d&rsquo;un objet itérable.<br>
 La syntaxe Python pour une telle opération est plutôt naturelle :
 <strong>for</strong> <em>élément</em> <strong>in</strong> <em>objet itérable</em> <strong>:</strong></p>
@@ -779,7 +795,7 @@ La syntaxe Python pour une telle opération est plutôt naturelle :
 Le <code>print()</code> de la boucle extérieure permet d&rsquo;aller à la ligne à la fin de chaque mot.</p>
 <p> </p>
 <p> </p>
-<h2 id="la-fonction-range">La fonction <code>range()</code></h2>
+<h3 id="range"><code>range()</code></h3>
 <p>Si vous devez itérer sur une suite d&rsquo;entiers, la fonction native <code>range()</code> est faite pour cela. Elle génère un objet de type séquence qui permet de créer des suites arithmétiques :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>) :
     <span style="color:#66d9ef">print</span>(i, end <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39; &#39;</span>)
@@ -815,7 +831,7 @@ a, b <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, 
 </code></pre></div><p><code>1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765</code></p>
 <p> </p>
 <p> </p>
-<h2 id="enumerate"><code>enumerate</code></h2>
+<h3 id="enumerate"><code>enumerate</code></h3>
 <p>Comme <code>range()</code> produit une suite d&rsquo;entiers, on peut l&rsquo;utiliser pour afficher l&rsquo;indice de l&rsquo;élément d&rsquo;une liste à chaque itération dans une boucle <code>for</code> :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">marsupiaux <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;kangooroo&#39;</span> , <span style="color:#e6db74">&#39;koala&#39;</span> , <span style="color:#e6db74">&#39;wombat&#39;</span>]
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(marsupiaux)) :
@@ -838,7 +854,7 @@ a, b <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, 
 <p><code>3  :  wombat</code></p>
 <p> </p>
 <p> </p>
-<h2 id="zip"><code>zip</code></h2>
+<h3 id="zip"><code>zip</code></h3>
 <p>Pour faire des boucles sur plusieurs séquences en même temps, on peut utiliser la fonction <code>zip()</code> afin d’associer les éléments des différentes séquences entre eux. <!-- raw HTML omitted -->Elle crée un objet itérable composé de tuples couplant les termes de même indice des différentes séquences en argument.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
 b <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#e6db74">&#39;d&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>]
@@ -856,6 +872,14 @@ A , B <span style="color:#f92672">=</span> zip(<span style="color:#f92672">*</sp
 </code></pre></div><p><code>(1, 2, 3, 4) </code></p>
 <p><code>('a', 'b', 'c', 'd')</code></p>
 <p>Comme <code>zip</code> ne copie pas les éléments vers un nouvel objet, cette méthode est rapide et économe en mémoire ; mais cela signifie aussi qu&rsquo;on ne peut itérer sur les éléments zippés qu&rsquo;une seule fois et qu&rsquo;on ne peut pas les indicer.</p>
+<p> </p>
+<p> </p>
+<h2 id="ensembles">Ensembles</h2>
+<p>dzdz</p>
+<p> </p>
+<p> </p>
+<h2 id="dictionnaires">Dictionnaires</h2>
+<p>&ldquo;dictionnary&rdquo; est le nom donné par Python a une structure de données très pratique : la table de hachage.</p>
 <p> </p>
 <p> </p>
 <h2 id="listes-par-compréhension">Listes par compréhension</h2>
@@ -915,9 +939,6 @@ MT <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span>,<
 </code></pre><p>Notons toutefois que le package de programmation scientifique NumPy (étudié plus tard) propose une méthode bien meilleure pour gérer les matrices.</p>
 <p> </p>
 <p> </p>
-<h2 id="ensembles">Ensembles</h2>
-<h2 id="dictionnaires">Dictionnaires</h2>
-<p>&ldquo;dictionnary&rdquo; est le nom donné par Python a une structure de données très pratique : la table de hachage.</p>
 
 
 <footer class="footline">
@@ -1181,19 +1202,19 @@ MT <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span>,<
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1612984104"></script>
-    <script src="/js/perfect-scrollbar.min.js?1612984104"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1612984104"></script>
-    <script src="/js/jquery.sticky.js?1612984104"></script>
-    <script src="/js/featherlight.min.js?1612984104"></script>
-    <script src="/js/highlight.pack.js?1612984104"></script>
+    <script src="/js/clipboard.min.js?1612993327"></script>
+    <script src="/js/perfect-scrollbar.min.js?1612993327"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1612993327"></script>
+    <script src="/js/jquery.sticky.js?1612993327"></script>
+    <script src="/js/featherlight.min.js?1612993327"></script>
+    <script src="/js/highlight.pack.js?1612993327"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1612984104"></script>
-    <script src="/js/learn.js?1612984104"></script>
-    <script src="/js/hugo-learn.js?1612984104"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1612993327"></script>
+    <script src="/js/learn.js?1612993327"></script>
+    <script src="/js/hugo-learn.js?1612993327"></script>
     
         
-            <script src="/mermaid/mermaid.js?1612984104"></script>
+            <script src="/mermaid/mermaid.js?1612993327"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

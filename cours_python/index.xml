@@ -35,7 +35,7 @@ salutation + nom &#39;Bonjour, monsieur Raoul&#39;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cordier-info.github.io/cours_python/cours3/</guid>
-      <description>Listes, tuples et boucles Listes Python connaît différents types de données combinées, utilisés pour regrouper plusieurs valeurs. La plus souple est la liste, qui peut être écrite comme une suite, placée entre crochets, de valeurs (éléments) séparées par des virgules. Les éléments d&amp;rsquo;une liste ne sont pas obligatoirement tous du même type, bien qu&amp;rsquo;à l&amp;rsquo;usage ce soit souvent le cas.
+      <description>Séquences et itérables Séquences Listes Python connaît différents types de données combinées, utilisés pour regrouper plusieurs valeurs. La plus souple est la liste, qui peut être écrite comme une suite, placée entre crochets, de valeurs (éléments) séparées par des virgules. Les éléments d&amp;rsquo;une liste ne sont pas obligatoirement tous du même type, bien qu&amp;rsquo;à l&amp;rsquo;usage ce soit souvent le cas.
 liste1 = [1, &amp;#39;deux&amp;#39;, 3.14, 0] liste1 [1, &#39;deux&#39;, 3.14, 0]</description>
     </item>
     
