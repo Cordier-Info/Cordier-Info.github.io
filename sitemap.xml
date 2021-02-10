@@ -7,7 +7,15 @@
   </url>
   
   <url>
+    <loc>https://cordier-info.github.io/tp_python/tp2/</loc>
+  </url>
+  
+  <url>
     <loc>https://cordier-info.github.io/cours_python/cours2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cordier-info.github.io/tp_python/tp3/</loc>
   </url>
   
   <url>
@@ -15,11 +23,23 @@
   </url>
   
   <url>
+    <loc>https://cordier-info.github.io/tp_python/tp4/</loc>
+  </url>
+  
+  <url>
     <loc>https://cordier-info.github.io/cours_python/cours4/</loc>
   </url>
   
   <url>
+    <loc>https://cordier-info.github.io/tp_python/tp5/</loc>
+  </url>
+  
+  <url>
     <loc>https://cordier-info.github.io/cours_python/cours5/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cordier-info.github.io/tp_python/tp6/</loc>
   </url>
   
   <url>
@@ -40,6 +60,10 @@
   
   <url>
     <loc>https://cordier-info.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cordier-info.github.io/tp_python/</loc>
   </url>
   
 </urlset>
