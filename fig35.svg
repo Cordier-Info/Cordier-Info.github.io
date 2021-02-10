@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="500" height="500" style="background: #ffffff">
+<circle cx="250.0" cy="250.0" r="200" style="stroke: blue; stroke-width: 2px; fill: none;"/>
+<line x1="250.0" y1="50.0" x2="250.0" y2="450.0" stroke="blue" />
+<line x1="50.0" y1="250.0" x2="450.0" y2="250.0" stroke="blue" />
+<line x1="391.4213562373095" y1="391.4213562373095" x2="108.57864376269049" y2="108.57864376269052" stroke="blue" />
+<line x1="391.4213562373095" y1="108.57864376269052" x2="108.57864376269049" y2="391.4213562373095" stroke="blue" />
+<circle cx="320.71067811865476" cy="179.28932188134524" r="100" style="stroke: red; fill: none; "/>
+<line x1="391.4213562373095" y1="250.0" x2="250.0" y2="108.57864376269046" stroke="red" />
+<line x1="391.4213562373095" y1="108.57864376269052" x2="249.99999999999997" y2="249.99999999999997" stroke="red" />
+<circle cx="391.4213562373095" cy="250.0" r="10" style="stroke: purple; fill: purple;"/>
+<circle cx="250.0" cy="108.57864376269046" r="10" style="stroke: purple; fill: purple;"/>
+<circle cx="391.4213562373095" cy="108.57864376269052" r="10" style="stroke: purple; fill: purple;"/>
+<circle cx="249.99999999999997" cy="249.99999999999997" r="10" style="stroke: purple; fill: purple;"/>
+</svg>
