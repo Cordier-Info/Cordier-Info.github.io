@@ -27,11 +27,19 @@
   </url>
   
   <url>
+    <loc>https://cordier-info.github.io/categories/</loc>
+  </url>
+  
+  <url>
     <loc>https://cordier-info.github.io/</loc>
   </url>
   
   <url>
     <loc>https://cordier-info.github.io/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cordier-info.github.io/tags/</loc>
   </url>
   
 </urlset>
