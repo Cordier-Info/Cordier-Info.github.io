@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sommaire on Cours Python</title>
-    <link>https://cordier-info.github.io/</link>
-    <description>Recent content in Sommaire on Cours Python</description>
+    <title>Docs on Cours Python</title>
+    <link>https://cordier-info.github.io/docs/</link>
+    <description>Recent content in Docs on Cours Python</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language><atom:link href="https://cordier-info.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language><atom:link href="https://cordier-info.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cours 1</title>
       <link>https://cordier-info.github.io/docs/cours1/</link>
