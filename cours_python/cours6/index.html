@@ -35,20 +35,20 @@ onload='renderMathInElement(document.body);'></script>
     
 
     
-    <link href="/css/nucleus.css?1613139761" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1613139761" rel="stylesheet">
-    <link href="/css/hybrid.css?1613139761" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1613139761" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1613139761" rel="stylesheet">
-    <link href="/css/auto-complete.css?1613139761" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1613139761" rel="stylesheet">
-    <link href="/css/theme.css?1613139761" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1613139761" rel="stylesheet">
+    <link href="/css/nucleus.css?1613142772" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1613142772" rel="stylesheet">
+    <link href="/css/hybrid.css?1613142772" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1613142772" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1613142772" rel="stylesheet">
+    <link href="/css/auto-complete.css?1613142772" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1613142772" rel="stylesheet">
+    <link href="/css/theme.css?1613142772" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1613142772" rel="stylesheet">
     
-    <link href="/css/foo.css?1613139761" rel="stylesheet"><link href="/css/bar.css?1613139761" rel="stylesheet">
+    <link href="/css/foo.css?1613142772" rel="stylesheet"><link href="/css/bar.css?1613142772" rel="stylesheet">
 
 
-    <script src="/js/jquery-3.3.1.min.js?1613139761"></script>
+    <script src="/js/jquery-3.3.1.min.js?1613142772"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@ onload='renderMathInElement(document.body);'></script>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1613139761"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1613139761"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1613142772"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1613142772"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/cordier-info.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1613139761"></script>
+<script type="text/javascript" src="/js/search.js?1613142772"></script>
 
     
   </div>
@@ -462,16 +462,16 @@ onload='renderMathInElement(document.body);'></script>
 <nav id="TableOfContents">
   <ul>
     <li><a href="#interaction-avec-le-système-dexploitation">Interaction avec le système d&rsquo;exploitation</a></li>
-    <li><a href="#lecture-et-écriture-de-fichiers">Lecture et écriture de fichiers</a>
+    <li><a href="#lectureetecriture">Lecture et écriture de fichiers</a>
       <ul>
         <li><a href="#ouvrir-et-fermer-un-fichier">Ouvrir et fermer un fichier</a></li>
-        <li><a href="#écrire-dans-un-fichier">Écrire dans un fichier</a></li>
+        <li><a href="#ecrire">Écrire dans un fichier</a></li>
         <li><a href="#lire-un-fichier">Lire un fichier</a></li>
       </ul>
     </li>
     <li><a href="#fichiers-image">Fichiers image</a></li>
     <li><a href="#interaction-avec-lutilisateur--la-fonction-input">Interaction avec l&rsquo;utilisateur : la fonction <code>input()</code></a></li>
-    <li><a href="#récupérer-des-données-sur-le-web">Récupérer des données sur le web</a></li>
+    <li><a href="#web">Récupérer des données sur le web</a></li>
   </ul>
 </nav>
     </div>
@@ -529,7 +529,7 @@ os<span style="color:#f92672">.</span>getcwd()
 </ul>
 <p> </p>
 <p> </p>
-<h2 id="lecture-et-écriture-de-fichiers">Lecture et écriture de fichiers</h2>
+<h2 id="lectureetecriture">Lecture et écriture de fichiers</h2>
 <p>Jusque-là, les différentes données de nos programmes étaient directement écrites dans le code et les sorties s&rsquo;affichaient sur le shell.</p>
 <p>Mais il est souvent plus utile d&rsquo;importer des données ou d&rsquo;écrire les sorties dans des fichiers plutôt que sur l&rsquo;écran. Pour cela, Python utilise l&rsquo;objet <code>file</code>.</p>
 <p> </p>
@@ -553,7 +553,7 @@ Ce mode est à utiliser pour les fichiers contenant autre chose que du texte.</p
 <p>Les objets <code>file</code> sont fermés grâce à la méthode <code>close()</code> : <code>f.close()</code> par exemple. Python ferme les fichiers automatiquement lorsque le programme se termine.</p>
 <p> </p>
 <p> </p>
-<h3 id="écrire-dans-un-fichier">Écrire dans un fichier</h3>
+<h3 id="ecrire">Écrire dans un fichier</h3>
 <p>La méthode <code>write()</code> d&rsquo;un objet <code>file</code> écrit une chaîne de caractères dans le fichier et renvoie le nombre de caractères inscrits.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#39;Coucou monde !&#39;</span>)
 </code></pre></div><p><code>14</code></p>
@@ -745,7 +745,7 @@ a<span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>
 <p><code>4.0</code></p>
 <p> </p>
 <p> </p>
-<h2 id="récupérer-des-données-sur-le-web">Récupérer des données sur le web</h2>
+<h2 id="web">Récupérer des données sur le web</h2>
 <p>Exemple de programme :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
 <span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
@@ -1047,19 +1047,19 @@ plt<span style="color:#f92672">.</span>show()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1613139761"></script>
-    <script src="/js/perfect-scrollbar.min.js?1613139761"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1613139761"></script>
-    <script src="/js/jquery.sticky.js?1613139761"></script>
-    <script src="/js/featherlight.min.js?1613139761"></script>
-    <script src="/js/highlight.pack.js?1613139761"></script>
+    <script src="/js/clipboard.min.js?1613142772"></script>
+    <script src="/js/perfect-scrollbar.min.js?1613142772"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1613142772"></script>
+    <script src="/js/jquery.sticky.js?1613142772"></script>
+    <script src="/js/featherlight.min.js?1613142772"></script>
+    <script src="/js/highlight.pack.js?1613142772"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1613139761"></script>
-    <script src="/js/learn.js?1613139761"></script>
-    <script src="/js/hugo-learn.js?1613139761"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1613142772"></script>
+    <script src="/js/learn.js?1613142772"></script>
+    <script src="/js/hugo-learn.js?1613142772"></script>
     
         
-            <script src="/mermaid/mermaid.js?1613139761"></script>
+            <script src="/mermaid/mermaid.js?1613142772"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

@@ -35,20 +35,20 @@ onload='renderMathInElement(document.body);'></script>
     
 
     
-    <link href="/css/nucleus.css?1613139761" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1613139761" rel="stylesheet">
-    <link href="/css/hybrid.css?1613139761" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1613139761" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1613139761" rel="stylesheet">
-    <link href="/css/auto-complete.css?1613139761" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1613139761" rel="stylesheet">
-    <link href="/css/theme.css?1613139761" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1613139761" rel="stylesheet">
+    <link href="/css/nucleus.css?1613142772" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1613142772" rel="stylesheet">
+    <link href="/css/hybrid.css?1613142772" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1613142772" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1613142772" rel="stylesheet">
+    <link href="/css/auto-complete.css?1613142772" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1613142772" rel="stylesheet">
+    <link href="/css/theme.css?1613142772" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1613142772" rel="stylesheet">
     
-    <link href="/css/foo.css?1613139761" rel="stylesheet"><link href="/css/bar.css?1613139761" rel="stylesheet">
+    <link href="/css/foo.css?1613142772" rel="stylesheet"><link href="/css/bar.css?1613142772" rel="stylesheet">
 
 
-    <script src="/js/jquery-3.3.1.min.js?1613139761"></script>
+    <script src="/js/jquery-3.3.1.min.js?1613142772"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@ onload='renderMathInElement(document.body);'></script>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1613139761"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1613139761"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1613142772"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1613142772"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/cordier-info.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1613139761"></script>
+<script type="text/javascript" src="/js/search.js?1613142772"></script>
 
     
   </div>
@@ -467,14 +467,14 @@ onload='renderMathInElement(document.body);'></script>
           <ul>
             <li><a href="#indexation">Indexation</a></li>
             <li><a href="#slicing">Slicing</a></li>
-            <li><a href="#mutabilité-des-listes">Mutabilité des listes</a></li>
-            <li><a href="#méthodes">Méthodes</a></li>
+            <li><a href="#mutabilite">Mutabilité des listes</a></li>
+            <li><a href="#methodes">Méthodes</a></li>
           </ul>
         </li>
         <li><a href="#tuples">Tuples</a></li>
       </ul>
     </li>
-    <li><a href="#objets-itérables">Objets itérables</a>
+    <li><a href="#iterables">Objets itérables</a>
       <ul>
         <li><a href="#boucle-for">Boucle <code>for</code></a></li>
         <li><a href="#range"><code>range()</code></a></li>
@@ -484,7 +484,7 @@ onload='renderMathInElement(document.body);'></script>
     </li>
     <li><a href="#dictionnaires">Dictionnaires</a></li>
     <li><a href="#ensembles">Ensembles</a></li>
-    <li><a href="#listes-par-compréhension">Listes par compréhension</a></li>
+    <li><a href="#comprehension">Listes par compréhension</a></li>
   </ul>
 </nav>
     </div>
@@ -576,7 +576,7 @@ L[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">4</span>]
 </code></pre></div><p><code>[0.1, 0.3, 0.5]</code></p>
 <p> </p>
 <p> </p>
-<h4 id="mutabilité-des-listes">Mutabilité des listes</h4>
+<h4 id="mutabilite">Mutabilité des listes</h4>
 
 <div class="notices warning" ><p>Contrairement aux chaînes de caractères, les listes sont des objets <strong>mutables</strong>, c&rsquo;est-à-dire qu&rsquo;on peut modifier leur contenu.</p>
 </div>
@@ -619,7 +619,7 @@ lettres
 </code></pre></div><p><code>[]</code></p>
 <p> </p>
 <p> </p>
-<h4 id="méthodes">Méthodes</h4>
+<h4 id="methodes">Méthodes</h4>
 <p>Le type <code>list</code> dispose, comme le type <code>string</code>, de méthodes supplémentaires, accessibles avec la notation point &ldquo;<code>.</code>&rdquo;.<br>
 Et comme les listes sont des objets muables, elles peuvent être agrandies ou rétrécies &ldquo;sur place&rdquo; (sans avoir à copier le contenu dans un nouvel objet).<br>
 Pour cela, on utilise les méthodes suivantes :</p>
@@ -750,7 +750,7 @@ x , y, z <span style="color:#f92672">=</span> t
 </code></pre></div><p><code>1 deux 3.0</code></p>
 <p> </p>
 <p> </p>
-<h2 id="objets-itérables">Objets itérables</h2>
+<h2 id="iterables">Objets itérables</h2>
 
 <div class="notices info" ><p>Les chaînes de caractères, les listes et les tuples sont des exemple d&rsquo;objets <strong>itérables</strong> : des objets composés d&rsquo;un ensemble d&rsquo;éléments  qui peuvent être sélectionnés un par un (= déballés ou unpacked en anglais).</p>
 </div>
@@ -1002,7 +1002,7 @@ P <span style="color:#f92672">=</span> set(range(<span style="color:#ae81ff">2</
 </code></pre></div><p><code>{2, 3, 67, 5, 7, 71, 73, 11, 13, 79, 17, 19, 83, 23, 89, 29, 31, 97, 37, 41, 43, 47, 53, 59, 61}</code></p>
 <p> </p>
 <p> </p>
-<h2 id="listes-par-compréhension">Listes par compréhension</h2>
+<h2 id="comprehension">Listes par compréhension</h2>
 <p>La construction de listes par compréhension permet de créer une liste à partir d&rsquo;un autre objet itérable en une seule ligne de code.<br>
 Par exemple, étant donné une liste de nombres, une liste des carrés de ces nombres peut être créée ainsi :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">xliste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>]
@@ -1328,19 +1328,19 @@ decompte
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1613139761"></script>
-    <script src="/js/perfect-scrollbar.min.js?1613139761"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1613139761"></script>
-    <script src="/js/jquery.sticky.js?1613139761"></script>
-    <script src="/js/featherlight.min.js?1613139761"></script>
-    <script src="/js/highlight.pack.js?1613139761"></script>
+    <script src="/js/clipboard.min.js?1613142772"></script>
+    <script src="/js/perfect-scrollbar.min.js?1613142772"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1613142772"></script>
+    <script src="/js/jquery.sticky.js?1613142772"></script>
+    <script src="/js/featherlight.min.js?1613142772"></script>
+    <script src="/js/highlight.pack.js?1613142772"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1613139761"></script>
-    <script src="/js/learn.js?1613139761"></script>
-    <script src="/js/hugo-learn.js?1613139761"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1613142772"></script>
+    <script src="/js/learn.js?1613142772"></script>
+    <script src="/js/hugo-learn.js?1613142772"></script>
     
         
-            <script src="/mermaid/mermaid.js?1613139761"></script>
+            <script src="/mermaid/mermaid.js?1613142772"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
