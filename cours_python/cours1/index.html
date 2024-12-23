@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="generator" content="Hugo 0.127.0">
     <meta name="description" content="Cours de Python">
 <meta name="author" content="Cordier-Info">
 
@@ -35,20 +35,20 @@ onload='renderMathInElement(document.body);'></script>
     
 
     
-    <link href="/css/nucleus.css?1618883170" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1618883170" rel="stylesheet">
-    <link href="/css/hybrid.css?1618883170" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1618883170" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1618883170" rel="stylesheet">
-    <link href="/css/auto-complete.css?1618883170" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1618883170" rel="stylesheet">
-    <link href="/css/theme.css?1618883170" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1618883170" rel="stylesheet">
+    <link href="/css/nucleus.css?1734961382" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1734961382" rel="stylesheet">
+    <link href="/css/hybrid.css?1734961382" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1734961382" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1734961382" rel="stylesheet">
+    <link href="/css/auto-complete.css?1734961382" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1734961382" rel="stylesheet">
+    <link href="/css/theme.css?1734961382" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1734961382" rel="stylesheet">
     
-    <link href="/css/foo.css?1618883170" rel="stylesheet"><link href="/css/bar.css?1618883170" rel="stylesheet">
+    <link href="/css/foo.css?1734961382" rel="stylesheet"><link href="/css/bar.css?1734961382" rel="stylesheet">
 
 
-    <script src="/js/jquery-3.3.1.min.js?1618883170"></script>
+    <script src="/js/jquery-3.3.1.min.js?1734961382"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@ onload='renderMathInElement(document.body);'></script>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1618883170"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1618883170"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1734961382"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1734961382"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/cordier-info.github.io";
+        var baseurl = "https:\/\/cordier-info.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1618883170"></script>
+<script type="text/javascript" src="/js/search.js?1734961382"></script>
 
     
   </div>
@@ -507,11 +507,11 @@ Pour sortir du shell classique, il faut taper <code>exit()</code>, et <code>exit
 <p>On peut tout à fait exécuter des commandes Python une à une dans le shell.<br>
 Une commande qui renvoie un résultat est appelée <strong>expression</strong>, alors qu&rsquo;une commande qui ne renvoie rien est une <strong>instruction</strong>.<br>
 Toute fonction est une expression, mais certaines ont en plus un <strong>effet</strong> sur l&rsquo;environnement comme <code>print()</code> qui permet d&rsquo;afficher une chaîne de caractères dans le shell ou dans un fichier (elle retourne aussi la valeur <code>None</code> qui est omise dans ce cas par le shell).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
-</code></pre></div><p><code>7</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(a)
-</code></pre></div><p><code>7</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><p><code>7</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(a)
+</span></span></code></pre></div><p><code>7</code></p>
 <p>Pour les projets plus complexes nécessitant d&rsquo;enchaîner les instructions, on écrit l&rsquo;ensemble de ces commandes (le programme) dans un éditeur de texte et on enregistre le fichier avec une extension <code>.py</code>.<br>
 On demande alors à l&rsquo;interprète Python d&rsquo;exécuter l&rsquo;ensemble du script en utilisant la commande <code>python nom_du_fichier.py</code> dans le shell de l&rsquo;OS. Les différents retours dans le shell ne sont alors plus affichés, seuls les effets ont un&hellip; effet.</p>
 <p>Le plus simple pour coder est d&rsquo;utiliser un environnement de travail (<strong>IDE</strong> pour &ldquo;integrated development environment&rdquo;) qui combine un éditeur de code et un shell Python permettant d&rsquo;exécuter le script entier ou une partie directement via l&rsquo;interface.</p>
@@ -519,13 +519,13 @@ On demande alors à l&rsquo;interprète Python d&rsquo;exécuter l&rsquo;ensembl
 <div class="notices info" ><p>Cela fait parti du bon usage en informatique de <strong>commenter son code</strong> afin qu&rsquo;il soit plus facilement compréhensible et donc partageable. En Python, les commentaires sont placés derrière un hastag <code>#</code> les rendant invisible pour l&rsquo;interprète.</p>
 </div>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> math  <span style="color:#75715e"># pour pouvoir utiliser pi (commentaire ignoré par l&#39;interprète)</span>
-r <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>  <span style="color:#75715e"># rayon</span>
-<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>math<span style="color:#f92672">.</span>pi<span style="color:#f92672">*</span>r  <span style="color:#75715e"># circonférence du cercle de rayon r</span>
-</code></pre></div><p> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math  <span style="color:#75715e"># pour pouvoir utiliser pi (commentaire ignoré par l&#39;interprète)</span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>  <span style="color:#75715e"># rayon</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>math<span style="color:#f92672">.</span>pi<span style="color:#f92672">*</span>r  <span style="color:#75715e"># circonférence du cercle de rayon r</span>
+</span></span></code></pre></div><p> 
  </p>
 <h2 id="installation">Installation</h2>
-<p>L&rsquo;installation d'<a href="https://www.anaconda.com/products/individual">Anaconda</a> rend disponible les principales bibliothèques scientifiques Python ainsi que le preformant IDE <strong>Spyder</strong> ou encore <strong>Jupyterlab</strong> (très intéressant pour les présentations de projets car associant dans une même interface texte et code pour former un <em>notebook</em>).</p>
+<p>L&rsquo;installation d&rsquo;<a href="https://www.anaconda.com/products/individual">Anaconda</a> rend disponible les principales bibliothèques scientifiques Python ainsi que le preformant IDE <strong>Spyder</strong> ou encore <strong>Jupyterlab</strong> (très intéressant pour les présentations de projets car associant dans une même interface texte et code pour former un <em>notebook</em>).</p>
 <p><a href="https://www.concours-centrale-supelec.fr/CentraleSupelec/SujetsOral/TSI">Les oraux de Centrale</a> &ldquo;Mathématiques 2&rdquo; et &ldquo;Physique-chimie 2&rdquo; utilisent l&rsquo;IDE <a href="https://pyzo.org">Pyzo</a>. Les ordinateurs du lycée ont les IDE EduPython et Pyzo disponibles sur le serveur <code>S:\</code>. Vous pouvez aussi utiliser pour dépanner l&rsquo;IDE en ligne <strong>Repl.it</strong> depuis le repository du TP.</p>
 <p><img src="/pyzo.png" alt=""></p>
 <p> 
@@ -545,32 +545,32 @@ Nombre de type <code>4+3j</code> (la partie imaginaire est notée <code>j</code>
 <code>4+3j</code> peut aussi s&rsquo;écrire <code>complex(4,3)</code>.</li>
 </ul>
 <p>Taper un nombre dans le shell Python renvoie simplement la nombre :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">5</span>
-</code></pre></div><p><code>5</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">5.</span>
-</code></pre></div><p><code>5.0</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">0.10</span>
-</code></pre></div><p><code>0.1</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">0.0001</span>
-</code></pre></div><p><code>0.0001</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">0.0000999</span>
-</code></pre></div><p><code>9.99e-05</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><p><code>5</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">5.</span>
+</span></span></code></pre></div><p><code>5.0</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">0.10</span>
+</span></span></code></pre></div><p><code>0.1</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">0.0001</span>
+</span></span></code></pre></div><p><code>0.0001</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">0.0000999</span>
+</span></span></code></pre></div><p><code>9.99e-05</code></p>
 <p>Les nombres inférieurs à 0,0001 sont écrits en notation scientifique.</p>
 <p>On peut <strong>changer le type d&rsquo;un nombre</strong>  (conversion) en utilisant les fonctions natives <code>int()</code>, <code>float</code> et <code>complex</code> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">float(<span style="color:#ae81ff">5</span>)
-</code></pre></div><p><code>5.0</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">int(<span style="color:#ae81ff">5.2</span>)
-</code></pre></div><p><code>5</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">int(<span style="color:#ae81ff">5.9</span>)
-</code></pre></div><p><code>5</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>float(<span style="color:#ae81ff">5</span>)
+</span></span></code></pre></div><p><code>5.0</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>int(<span style="color:#ae81ff">5.2</span>)
+</span></span></code></pre></div><p><code>5</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>int(<span style="color:#ae81ff">5.9</span>)
+</span></span></code></pre></div><p><code>5</code></p>
 
 <div class="notices note" ><p>On remarque que la transformation en entier d&rsquo;un nombre décimal prend en fait sa partie entière.</p>
 </div>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">complex(<span style="color:#ae81ff">3.</span>)
-</code></pre></div><p><code>(3+0j)</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">complex(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">3.</span>)
-</code></pre></div><p><code>3j</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>complex(<span style="color:#ae81ff">3.</span>)
+</span></span></code></pre></div><p><code>(3+0j)</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>complex(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">3.</span>)
+</span></span></code></pre></div><p><code>3j</code></p>
 <p> </p>
 <p> </p>
 <h2 id="arithmetique">Arithmétique de base</h2>
@@ -615,51 +615,51 @@ Nombre de type <code>4+3j</code> (la partie imaginaire est notée <code>j</code>
 </table>
 <p>Règles de priorités des opérations :<br>
 <code>**</code>   &gt;   { <code>*</code> ,<code>/</code> , <code>//</code> , <code>%</code> }   &gt;   { <code>+</code> ,<code> -</code> }</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">6</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>           <span style="color:#75715e"># comme 3 / 4</span>
-</code></pre></div><p><code>0.75</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">6</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>)         <span style="color:#75715e"># comme 6 / 0.5</span>
-</code></pre></div><p><code>12.0</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">2</span><span style="color:#f92672">**</span><span style="color:#ae81ff">2</span><span style="color:#f92672">**</span><span style="color:#ae81ff">3</span>             <span style="color:#75715e"># comme 2**(2**3) == 2**8</span>
-</code></pre></div><p><code>256</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(<span style="color:#ae81ff">2</span><span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">**</span><span style="color:#ae81ff">3</span>          <span style="color:#75715e"># comme 4**3</span>
-</code></pre></div><p><code>64</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">6</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>           <span style="color:#75715e"># comme 3 / 4</span>
+</span></span></code></pre></div><p><code>0.75</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">6</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>)         <span style="color:#75715e"># comme 6 / 0.5</span>
+</span></span></code></pre></div><p><code>12.0</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">2</span><span style="color:#f92672">**</span><span style="color:#ae81ff">2</span><span style="color:#f92672">**</span><span style="color:#ae81ff">3</span>             <span style="color:#75715e"># comme 2**(2**3) == 2**8</span>
+</span></span></code></pre></div><p><code>256</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">**</span><span style="color:#ae81ff">3</span>          <span style="color:#75715e"># comme 4**3</span>
+</span></span></code></pre></div><p><code>64</code></p>
 <p>Les opérations de priorité égale sont évaluées de gauche à droite à l&rsquo;exception des puissances (ce qui correspond à évaluer de haut en bas les exposants).</p>
 <p> </p>
 <p> </p>
 <h2 id="methodes">Méthodes et attributs</h2>
 <p>En Python, tout, y compris un nombre, est un <strong>objet</strong> ayant certains <strong>attributs</strong> accessibles grâce à la notation &ldquo;point&rdquo; : <code>&lt;objet&gt;.&lt;attribut&gt;</code>.
 Certains attributs sont des simples valeurs : les nombres complexes ont par exemple les attributs <code>real</code> et <code>imag</code> qui sont les parties réelles et imaginaires d&rsquo;un nombre complexe.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(<span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">4j</span>)<span style="color:#f92672">.</span>imag
-</code></pre></div><p><code>4.0</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>(<span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">4</span>j)<span style="color:#f92672">.</span>imag
+</span></span></code></pre></div><p><code>4.0</code></p>
 <p>D&rsquo;autres attributs sont des <strong>méthodes</strong> : des fonctions qui modifient leur objet d&rsquo;une façon ou d&rsquo;une autre.<br>
 Par exemple, les nombres complexes ont la méthode <code>conjugate</code> qui retourne le complexe conjugué :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(<span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">4j</span>)<span style="color:#f92672">.</span>conjugate()
-</code></pre></div><p><code>(3-4j)</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>(<span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">4</span>j)<span style="color:#f92672">.</span>conjugate()
+</span></span></code></pre></div><p><code>(3-4j)</code></p>
 <p> </p>
 <p> </p>
 <h2 id="mathematiques">Fonctions mathématiques</h2>
 <p><code>round</code> et <code>abs</code> sont deux fonctions proposées par défaut (natives).<br>
 <code>abs</code> retourne la valeur absolue d&rsquo;un nombre entier ou décimal, ou le module d&rsquo;un nombre complexe (c&rsquo;est un exemple de polymorphisme : comportement différent en fonction du type de l&rsquo;argument).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">abs(<span style="color:#f92672">-</span><span style="color:#ae81ff">7.2</span>)
-</code></pre></div><p><code>7.2</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">abs(<span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">4j</span>)
-</code></pre></div><p><code>5.0</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>abs(<span style="color:#f92672">-</span><span style="color:#ae81ff">7.2</span>)
+</span></span></code></pre></div><p><code>7.2</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>abs(<span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">4</span>j)
+</span></span></code></pre></div><p><code>5.0</code></p>
 <p><code>round</code> arrondi un nombre décimal à l&rsquo;entier le plus proche (attention, la convention utilisée lorsque la décimale vaut 5 est l&rsquo;arrondi bancaire ou arrondi au pair le plus proche : au-dessus lorsque la partie entière est impaire et en dessous lorsqu&rsquo;elle est paire).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">round(<span style="color:#ae81ff">7.6</span>)
-</code></pre></div><p><code>8</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">round(<span style="color:#ae81ff">7.5</span>)
-</code></pre></div><p><code>8</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">round(<span style="color:#ae81ff">8.5</span>)
-</code></pre></div><p><code>8</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>round(<span style="color:#ae81ff">7.6</span>)
+</span></span></code></pre></div><p><code>8</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>round(<span style="color:#ae81ff">7.5</span>)
+</span></span></code></pre></div><p><code>8</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>round(<span style="color:#ae81ff">8.5</span>)
+</span></span></code></pre></div><p><code>8</code></p>
 <p>Python est un langage d&rsquo;une grande modularité : des fonctionnalités supplémentaires sont accessibles en important des modules ou des packages qui ne sont pas chargés par défaut (ce qui permet de ne pas encombrer la mémoire).<br>
 Beaucoup de fonctions mathématiques utiles peuvent ainsi être ajoutées grâce au module <code>math</code>, importé grâce à la déclaration <code>import math</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">math<span style="color:#f92672">.</span>exp(<span style="color:#f92672">-</span><span style="color:#ae81ff">1.5</span>)
-</code></pre></div><p><code>0.22313016014842982</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">math<span style="color:#f92672">.</span>cos(<span style="color:#ae81ff">0</span>)
-</code></pre></div><p><code>1.0</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">math<span style="color:#f92672">.</span>sqrt(<span style="color:#ae81ff">9</span>)
-</code></pre></div><p><code>3.0</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>math<span style="color:#f92672">.</span>exp(<span style="color:#f92672">-</span><span style="color:#ae81ff">1.5</span>)
+</span></span></code></pre></div><p><code>0.22313016014842982</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>math<span style="color:#f92672">.</span>cos(<span style="color:#ae81ff">0</span>)
+</span></span></code></pre></div><p><code>1.0</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>math<span style="color:#f92672">.</span>sqrt(<span style="color:#ae81ff">9</span>)
+</span></span></code></pre></div><p><code>3.0</code></p>
 <p>L&rsquo;ensemble des fonctions disponibles dans le module sont répertoriées dans sa <a href="http://docs.python.org/3/library/math.html">documentation en ligne</a> et les plus utiles sont dans le tableau suivant (les angles des fonctions trigonométriques sont supposés en radians) :</p>
 <table>
 <thead>
@@ -735,36 +735,36 @@ Beaucoup de fonctions mathématiques utiles peuvent ainsi être ajoutées grâce
 </table>
 <p>Le module <code>math</code> propose aussi deux attributs très utiles : math.pi et math.e qui donnent les valeurs de $\pi$ et $e$.</p>
 <p>Il est possible d&rsquo;importer le module <code>math</code> par la commande <code>from math import *</code> afin d&rsquo;accéder à ses fonctions directement :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> math <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">cos(pi)
-</code></pre></div><p><code>-1.0</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> math <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>cos(pi)
+</span></span></code></pre></div><p><code>-1.0</code></p>
 <p>Bien que cela puisse être pratique pour des petites interactions avec le shell, ce n&rsquo;est pas recommandé pour des programmes plus conséquent car cela peut générer confusions et conflits de noms.</p>
 <p>On peut bien sûr composer les fonctions :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">math<span style="color:#f92672">.</span>degrees(math<span style="color:#f92672">.</span>acos(math<span style="color:#f92672">.</span>sqrt(<span style="color:#ae81ff">3</span>)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>))
-</code></pre></div><p><code>30.000000000000004</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>math<span style="color:#f92672">.</span>degrees(math<span style="color:#f92672">.</span>acos(math<span style="color:#f92672">.</span>sqrt(<span style="color:#ae81ff">3</span>)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>))
+</span></span></code></pre></div><p><code>30.000000000000004</code></p>
 <p>Notons que le nombre affiché diffère du résultat exact attendu $\arccos(\sqrt{3}/2)=30°$. C&rsquo;est dû au codage machine des flottants qui ne permet qu&rsquo;une précision limité.</p>
 <p> </p>
 <p> </p>
 <h2 id="variables">Variables</h2>
 <p>Lorsqu&rsquo;un objet, comme un <code>float</code>, est créé dans un programme Python, une certaine place en mémoire lui est allouée. Cette place est repérée par une adresse dont la valeur peut être obtenue grâce à la fonction <code>id()</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(<span style="color:#ae81ff">3.7</span>)
-</code></pre></div><p><code>4387417928</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(<span style="color:#ae81ff">3.7</span>)
+</span></span></code></pre></div><p><code>4387417928</code></p>
 <p>Il est beaucoup plus pratique de pouvoir récupérer une valeur en mémoire grâce à un petit nom plutôt que par son adresse. C&rsquo;est à ça que servent les variables. Une variable est liée à un objet grâce à une <strong>affectation</strong> et identifie cet objet pour les calculs suivants.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0.1</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">*</span> b
-</code></pre></div><p><code>-0.30000000000000004</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>b <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0.1</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">*</span> b
+</span></span></code></pre></div><p><code>-0.30000000000000004</code></p>
 <p>À nouveau, le résultat décimal affiché est un peu étrange, toujours à cause de la précision limité des flottants (environ 16 chiffres significatifs seulement)&hellip;</p>
 <p>Si on veut pouvoir utiliser le résultat de <code>a * b</code> pour des calculs ultérieurs, il faut lui aussi le stocker en mémoire.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> b
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c
-</code></pre></div><p><code>-0.30000000000000004</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> b
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c
+</span></span></code></pre></div><p><code>-0.30000000000000004</code></p>
 <p>Contrairement à des langages à typage statique comme le C, <strong>le type d&rsquo;une variable n&rsquo;a pas besoin d&rsquo;être déclarée en Python</strong>. On parle alors de <strong>typage dynamique.</strong> Mais il faut néanmoins initialiser la valeur de la variable pour ne pas provoquer d&rsquo;erreur. Le type de la variable est induit au moment de cette première affectation.</p>
-<pre><code>3+x
+<pre tabindex="0"><code>3+x
 </code></pre><p><code>NameError: name 'x' is not defined</code></p>
 <p>On peut interroger le type d&rsquo;une variable avec la fonction <code>type()</code> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">type(c)
-</code></pre></div><p><code>float</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>type(c)
+</span></span></code></pre></div><p><code>float</code></p>
 <p> </p>
 <p>Règles sur les noms de variables :</p>
 <ul>
@@ -783,29 +783,27 @@ Beaucoup de fonctions mathématiques utiles peuvent ainsi être ajoutées grâce
 </blockquote>
 <p> </p>
 <p>Une affectation ne retourne rien (c&rsquo;est une instruction) mais a un effet sur la mémoire : l&rsquo;adresse de la variable est modifiée à chaque nouvelle affectation. C&rsquo;est ce qui rend possible les réaffectations à partir de la variable elle-même.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(a)
-</code></pre></div><p><code>4304751488</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(a<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
-</code></pre></div><p><code>4304751520</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(a)
-</code></pre></div><p><code>4304751520</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(a)
+</span></span></code></pre></div><p><code>4304751488</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(a<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p><code>4304751520</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(a)
+</span></span></code></pre></div><p><code>4304751520</code></p>
 <p>Ces types de <strong>réaffectation</strong> sont si fréquents qu&rsquo;il existe une notation raccourcie : <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>//=</code>, <code>%=</code>.</p>
 <p>Ainsi, <code>a += 1</code> équivaut à <code>a = a + 1</code> et <code>b /= 5</code> équivaut à <code>b = b/5</code>.</p>
 <p> </p>
-<p>Python permet d'<strong>affecter plusieurs variables simultanément</strong> (en parallèle) :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a , b <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.2</span> , <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a
-</code></pre></div><p><code>3.2</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b
-</code></pre></div><p><code>-2</code></p>
-<p>Comment faire si on veut permuter les valeurs auxquelles sont liées deux variables ? Dès qu&rsquo;on écrit <code>a = b</code>, la valeur initiale de <code>a</code> est perdue et si on commence par <code>b = a</code>, c&rsquo;est la valeur initiale de <code>b</code> qui est perdue. Il faudrait donc utiliser une variable temporaire et écrire : <code>tmp = a</code>, <code>a = b</code> et <code>b = tmp</code>.<br>
+<p>Python permet d&rsquo;<strong>affecter plusieurs variables simultanément</strong> (en parallèle) :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a , b <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.2</span> , <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>a
+</span></span></code></pre></div><p><code>3.2</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>b
+</span></span></code></pre></div><p><code>-2</code></p>
+<p>Comment faire si on veut permuter les valeurs auxquelles sont liées deux variables ? Dès qu&rsquo;on écrit <code>a = b</code>, la valeur initiale de <code>a</code> est perdue. Et si on commence par <code>b = a</code>, c&rsquo;est la valeur initiale de <code>b</code> qui est perdue. Il faudrait donc utiliser une variable temporaire et écrire : <code>tmp = a</code>, <code>a = b</code> et <code>b = tmp</code>.<br>
 Mais l&rsquo;affectation parallèle de Python va nous permettre d&rsquo;être plus élégants. Il suffit en effet d&rsquo;une petite ligne :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a , b <span style="color:#f92672">=</span> b , a
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a
-</code></pre></div><p><code>-2</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b
-</code></pre></div><p><code>3.2</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a , b <span style="color:#f92672">=</span> b , a
+</span></span><span style="display:flex;"><span>print(a,b)
+</span></span></code></pre></div><p><code>-2 3.2</code></p>
 <p>L&rsquo;affectation parallèle repose sur le packing et l&rsquo;unpacking de tuples, mais on verra ça dans un prochain cours.</p>
 <p> </p>
 <p> </p>
@@ -846,70 +844,70 @@ Mais l&rsquo;affectation parallèle de Python va nous permettre d&rsquo;être pl
 </tbody>
 </table>
 <p>Le résultat d&rsquo;une comparaison est un objet booléen (type <code>bool</code>) qui a deux valeurs possibles : <code>True</code> ou <code>False</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">7</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">8</span>
-</code></pre></div><p><code>False</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">4</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">3.8</span>
-</code></pre></div><p><code>True</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>
-type(a)
-</code></pre></div><p><code>bool</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">7</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">8</span>
+</span></span></code></pre></div><p><code>False</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">4</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">3.8</span>
+</span></span></code></pre></div><p><code>True</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>type(a)
+</span></span></code></pre></div><p><code>bool</code></p>
 <p>Il faut bien noter la différence entre <code>=</code> qui affecte une valeur à une variable et <code>==</code> qui compare deux valeurs.</p>
 
 <div class="notices warning" ><p>La précision finie des nombres flottants rend leur comparaison dangereuse :</p>
 </div>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a , b <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span> , <span style="color:#ae81ff">0.1</span><span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">==</span> b
-</code></pre></div><p><code>False</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a , b <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span> , <span style="color:#ae81ff">0.1</span><span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">==</span> b
+</span></span></code></pre></div><p><code>False</code></p>
 <p>En effet :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a
-</code></pre></div><p><code>0.01</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">b
-</code></pre></div><p><code>0.010000000000000002</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a
+</span></span></code></pre></div><p><code>0.01</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>b
+</span></span></code></pre></div><p><code>0.010000000000000002</code></p>
 <p>Les comparaisons peuvent être modifiées et enchaînées grâce aux opérateurs logiques <code>and</code> (et), <code>or</code> (ou inclusif), et <code>not</code> (non).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">7.0</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">and</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>
-</code></pre></div><p><code>False</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">or</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>
-</code></pre></div><p><code>True</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">7.0</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">and</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><p><code>False</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">or</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><p><code>True</code></p>
 <p>Dans des expressions composées comme celles-ci, les opérateurs de comparaison sont évalués en premier puis vient le tour des opérateurs logiques.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">not</span> <span style="color:#ae81ff">7.5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.9</span> <span style="color:#f92672">or</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span>
-</code></pre></div><p><code>True</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">not</span> (<span style="color:#ae81ff">7.5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.9</span> <span style="color:#f92672">or</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span>)
-</code></pre></div><p><code>False</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">not</span> <span style="color:#ae81ff">7.5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.9</span> <span style="color:#f92672">or</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span>
+</span></span></code></pre></div><p><code>True</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">not</span> (<span style="color:#ae81ff">7.5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.9</span> <span style="color:#f92672">or</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span>)
+</span></span></code></pre></div><p><code>False</code></p>
 <p>Un nombre entier ou décimal peut être considéré comme un booléen dans des expressions logiques. Dans ce cas, tout nombre différent de zéro est considéré comme vrai.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">18.7</span> <span style="color:#f92672">and</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8</span>
-</code></pre></div><p><code>True</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">18.7</span> <span style="color:#f92672">and</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8</span>
+</span></span></code></pre></div><p><code>True</code></p>
 
-<div class="notices note" ><p>On parle d'<strong>égalité de valeurs</strong> (testée par l&rsquo;opérateur <code>==</code>) lorsque deux variables référencent la même valeur et d'<strong>égalité physique</strong> lorsqu&rsquo;il s&rsquo;agit du même objet ayant un emplacement mémoire unique. L&rsquo;égalité physique implique bien sûr l&rsquo;égalité de valeurs.</p>
+<div class="notices note" ><p>On parle d&rsquo;<strong>égalité de valeurs</strong> (testée par l&rsquo;opérateur <code>==</code>) lorsque deux variables référencent la même valeur et d&rsquo;<strong>égalité physique</strong> lorsqu&rsquo;il s&rsquo;agit du même objet ayant un emplacement mémoire unique. L&rsquo;égalité physique implique bien sûr l&rsquo;égalité de valeurs.</p>
 </div>
 
 <p>Pour tester l&rsquo;égalité physique de deux variables, on utilise l&rsquo;opérateur <code>is</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">257</span>
-b <span style="color:#f92672">=</span> <span style="color:#ae81ff">257</span>
-a <span style="color:#f92672">==</span> b
-</code></pre></div><p><code>True</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">is</span> b
-</code></pre></div><p><code>False</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">is</span> <span style="color:#ae81ff">257</span>
-</code></pre></div><p><code>False</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(a)
-</code></pre></div><p><code>4396188400</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(b)
-</code></pre></div><p><code>4396188144</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(<span style="color:#ae81ff">257</span>)
-</code></pre></div><p><code>4396188272</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
-d <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
-c <span style="color:#f92672">is</span> d
-</code></pre></div><p><code>True</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c <span style="color:#f92672">is</span> <span style="color:#ae81ff">256</span>
-</code></pre></div><p><code>True</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(c)
-</code></pre></div><p><code>4304759584</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(d)
-</code></pre></div><p><code>4304759584</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">id(<span style="color:#ae81ff">256</span>)
-</code></pre></div><p><code>4304759584</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">257</span>
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> <span style="color:#ae81ff">257</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">==</span> b
+</span></span></code></pre></div><p><code>True</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">is</span> b
+</span></span></code></pre></div><p><code>False</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">is</span> <span style="color:#ae81ff">257</span>
+</span></span></code></pre></div><p><code>False</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(a)
+</span></span></code></pre></div><p><code>4396188400</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(b)
+</span></span></code></pre></div><p><code>4396188144</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(<span style="color:#ae81ff">257</span>)
+</span></span></code></pre></div><p><code>4396188272</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
+</span></span><span style="display:flex;"><span>d <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
+</span></span><span style="display:flex;"><span>c <span style="color:#f92672">is</span> d
+</span></span></code></pre></div><p><code>True</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c <span style="color:#f92672">is</span> <span style="color:#ae81ff">256</span>
+</span></span></code></pre></div><p><code>True</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(c)
+</span></span></code></pre></div><p><code>4304759584</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(d)
+</span></span></code></pre></div><p><code>4304759584</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>id(<span style="color:#ae81ff">256</span>)
+</span></span></code></pre></div><p><code>4304759584</code></p>
 <p>Python garde en cache les petits entiers (de -5 à 256 généralement), souvent utilisés, pour améliorer les performances. <code>a</code> et <code>b</code>
 sont alors tout deux liés à l&rsquo;espace mémoire de l&rsquo;objet <code>256</code>. Ils correspondent donc bien au même objet physique.</p>
 <p> </p>
@@ -1178,19 +1176,19 @@ On en verra un exemple d&rsquo;utilisation dans le TP 3.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1618883170"></script>
-    <script src="/js/perfect-scrollbar.min.js?1618883170"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1618883170"></script>
-    <script src="/js/jquery.sticky.js?1618883170"></script>
-    <script src="/js/featherlight.min.js?1618883170"></script>
-    <script src="/js/highlight.pack.js?1618883170"></script>
+    <script src="/js/clipboard.min.js?1734961382"></script>
+    <script src="/js/perfect-scrollbar.min.js?1734961382"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1734961382"></script>
+    <script src="/js/jquery.sticky.js?1734961382"></script>
+    <script src="/js/featherlight.min.js?1734961382"></script>
+    <script src="/js/highlight.pack.js?1734961382"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1618883170"></script>
-    <script src="/js/learn.js?1618883170"></script>
-    <script src="/js/hugo-learn.js?1618883170"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1734961382"></script>
+    <script src="/js/learn.js?1734961382"></script>
+    <script src="/js/hugo-learn.js?1734961382"></script>
     
         
-            <script src="/mermaid/mermaid.js?1618883170"></script>
+            <script src="/mermaid/mermaid.js?1734961382"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
